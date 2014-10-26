@@ -3,13 +3,19 @@
 <head>
   <meta charset="utf-8">
   
-  <title>6Path › 归档</title>
+  <title>6Path › 用U盘修复GRUB2教程</title>
   <meta name="author" content="Chi">
+  
+  <meta name="description" content="不管你是调整分区大小，还是安装了新系统，也可能是没睡醒做了该剁手的事情，GRUB2经常会被破坏掉。
+今天这个事情就发生在了我身上…手抖的删掉了一个分区，然后直接点了重启。于是开机时卡在GRUB RESCURE了。
+下面就是重新安装GRUB的流程了。
+挂载分区
+挂载ubuntu安装的分区。可以用GPa">
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  
+  <meta property="og:title" content="用U盘修复GRUB2教程"/>
   <meta property="og:site_name" content="6Path"/>
 
   
@@ -41,16 +47,12 @@
 <div class="clearfix"></div>
 </header>
   <div id="content" class="inner">
-    <div id="main-col" class="alignleft"><div id="wrapper">
-<h2 class="archive-title">归档</h2>
-
-
-<article class="post">
+    <div id="main-col" class="alignleft"><div id="wrapper"><article class="post">
   <div class="post-content">
     <header>
       
   
-    <h1 class="title"><a href="/2014/10/26/use-thunmdrive-to-fix-grub2/">用U盘修复GRUB2教程</a></h1>
+    <h1 class="title">用U盘修复GRUB2教程</h1>
   
 
       
@@ -86,112 +88,25 @@
       
     </div>
     
+    <footer>
+      <div class="alignleft">
       
+      
+      </div>
+      <div class="clearfix"></div>
+    </footer>
     
   </div>
 </article>
 
 
-
-
-<article class="post">
-  <div class="post-content">
-    <header>
-      
+<section id="comment">
   
-    <h1 class="title"><a href="/2014/10/26/Hexo-problem-when-changing-theme/">Hexo2.8切换主题会遇到的问题</a></h1>
-  
-
-      
-      <time datetime="2014-10-26T02:28:20.000Z">10月 26 2014</time>
-      
-    </header>
-    <div class="entry">
-      
-        <h3 id="问题">问题</h3>
-<p>在_config.yml里面更改了主题名称后，运行<code>hexo generate</code>会看到如下错误：</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="attribute">message</span>: <span class="string">'Process failed: languages/de.yml',</span></div></pre></td></tr></table></figure>
-
-<h3 id="解决方法">解决方法</h3>
-<p>Github上有讨论：<a href="https://github.com/hexojs/hexo/issues/722" target="_blank" rel="external">https://github.com/hexojs/hexo/issues/722</a></p>
-<p>解决的方法很简单，就是要对第三方主题的languages文件夹下面的yml文件做出修改：<strong>value的值里面有空格的，需要都用双引号括住</strong>。</p>
-<p><img src="https://cloud.githubusercontent.com/assets/2100515/3622133/2b419004-0e29-11e4-8977-a663954d8986.png" alt=""></p>
-
-      
-    </div>
-    
-      
-    
+  <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
   </div>
-</article>
-
-
-
-
-<article class="post">
-  <div class="post-content">
-    <header>
-      
   
-    <h1 class="title"><a href="/2014/10/26/hello-world/">Hello World</a></h1>
-  
-
-      
-      <time datetime="2014-10-25T16:59:34.000Z">10月 26 2014</time>
-      
-    </header>
-    <div class="entry">
-      
-        <p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">trobuleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick_Start">Quick Start</h2>
-<h3 id="Create_a_new_post">Create a new post</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-
-<p>More info: <a href="http://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run_server">Run server</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-
-<p>More info: <a href="http://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate_static_files">Generate static files</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-
-<p>More info: <a href="http://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy_to_remote_sites">Deploy to remote sites</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-
-<p>More info: <a href="http://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-      
-    </div>
-    
-      
-    
-  </div>
-</article>
-
-
-
-
-<div class="pagination">
-  <table width='100%'>
-    <tbody>
-    <tr>
-      <td width='120' align='left'>
-        
-      </td>
-      <td width='auto' align='center'>
-          <a href="/archives/">文章归档</a>
-      </td>
-      <td width='120' align='right'>
-        
-      </td>
-    </tr>
-    </tbody>
-  </table>
-</div>
-
-
-
+</section>
 
 </div></div>
     <div class="clearfix"></div>
@@ -215,7 +130,7 @@ var disqus_shortname = 'chenggiant';
   var dsq = document.createElement('script');
   dsq.type = 'text/javascript';
   dsq.async = true;
-  dsq.src = '//' + disqus_shortname + '.disqus.com/count.js';
+  dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
   (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
 }());
 
