@@ -47,6 +47,40 @@
     <header>
       
   
+    <h1 class="title"><a href="/2014/10/26/Hexo-problem-when-changing-theme/">Hexo2.8切换主题会遇到的问题</a></h1>
+  
+
+      
+      <time datetime="2014-10-26T02:28:20.000Z">10月 26 2014</time>
+      
+    </header>
+    <div class="entry">
+      
+        <h3 id="问题">问题</h3>
+<p>在_config.yml里面更改了主题名称后，运行<code>hexo generate</code>会看到如下错误：</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="attribute">message</span>: <span class="string">'Process failed: languages/de.yml',</span></div></pre></td></tr></table></figure>
+
+<h3 id="解决方法">解决方法</h3>
+<p>Github上有讨论：<a href="https://github.com/hexojs/hexo/issues/722" target="_blank" rel="external">https://github.com/hexojs/hexo/issues/722</a></p>
+<p>解决的方法很简单，就是要对第三方主题的languages文件夹下面的yml文件做出修改：<strong>value的值里面有空格的，需要都用双引号括住</strong>。</p>
+<p><img src="https://cloud.githubusercontent.com/assets/2100515/3622133/2b419004-0e29-11e4-8977-a663954d8986.png" alt=""></p>
+
+      
+    </div>
+    
+      
+    
+  </div>
+</article>
+
+
+
+
+  <article class="post">
+  <div class="post-content">
+    <header>
+      
+  
     <h1 class="title"><a href="/2014/10/26/hello-world/">Hello World</a></h1>
   
 
