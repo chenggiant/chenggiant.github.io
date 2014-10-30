@@ -50,6 +50,56 @@
     <header>
       
   
+    <h1 class="title"><a href="/2014/10/30/immutable-data-structure/">实现Immutable Stack</a></h1>
+  
+
+      
+      <time datetime="2014-10-30T13:57:46.000Z">10月 30 2014</time>
+      
+    </header>
+    <div class="entry">
+      
+        <h4 id="背景">背景</h4>
+<p>最近需要实现Immutable的数据结构，于是开始在网上找相关的资料，找到了一个微软大牛写的<a href="http://blogs.msdn.com/b/ericlippert/archive/2007/11/13/immutability-in-c-part-one-kinds-of-immutability.aspx" target="_blank" rel="external">系列文章</a>。有兴趣的可以去那里看看。</p>
+<p>大牛们写文章确实完全不关心格式呀，代码都是黑白的，没有加亮看的相当费力啊！今天展示把关于实现<a href="http://blogs.msdn.com/b/ericlippert/archive/2007/12/04/immutability-in-c-part-two-a-simple-immutable-stack.aspx" target="_blank" rel="external">Immutable Stack的文章</a>给搬过来。</p>
+<p>额，大牛是微软的…所以下面的代码是C#的。等我用java实现好了，保证没问题再贴上来吧。C++，VB，C#好像都已经自带Immutable的数据结构了。实现一遍也好呀，对functional programming的理解可能会深入一点吧…</p>
+<h4 id="美化版">美化版</h4>
+<p>Let’s start with something simple: an immutable stack.</p>
+<p>Now, immediately I hear the objection: a stack is by its very nature something that changes. A stack is an abstract data type (ADT) with the interface</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">void</span> Push(T t);</div><div class="line">T Pop();</div><div class="line"><span class="keyword">bool</span> IsEmpty { <span class="keyword">get</span>; }</div></pre></td></tr></table></figure>
+
+<p>You push stuff onto it, you pop stuff off of it, it changes. How can it be immutable?</p>
+<p>Every time you need to make a data structure immutable, you use basically the same trick: <strong>an operation which “changes” the data structure does so by constructing a new data structure. The original data structure stays the same</strong>.</p>
+<p>How can that possibly be efficient? Surely we’ll be allocating memory all over the place! Well, actually, in this case, no. An immutable stack is every bit as efficient as a mutable stack. Even better: in some cases, it can be considerably more efficient, as we’ll see.</p>
+<p>Let’s start by defining an interface for our immutable structure. While we’re at it, we’ll fix a problem with the stack ADT above, namely that you cannot interrogate the stack without changing it. And we’ll make the stack enumerable just for the heck of it:</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="keyword">interface</span> IStack&lt;T&gt; : IEnumerable&lt;T&gt;</div><div class="line">{</div><div class="line">    IStack&lt;T&gt; Push(T <span class="keyword">value</span>);</div><div class="line">    IStack&lt;T&gt; Pop();</div><div class="line">    T Peek();</div><div class="line">    <span class="keyword">bool</span> IsEmpty { <span class="keyword">get</span>; }</div><div class="line">}</div></pre></td></tr></table></figure>
+
+<p>Pushing and popping give you back an entirely new stack, and Peek lets you look at the top of the stack without popping it.</p>
+<p>Now let’s think about constructing one of these things here. </p>
+<p>Clearly if we have an existing stack we can construct a new one by pushing or popping it. But we have to start somewhere. Since every empty stack is the same, it seems sensible to have a singleton empty stack.</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="keyword">sealed</span> <span class="keyword">class</span> Stack&lt;T&gt; : IStack&lt;T&gt;</div><div class="line">{</div><div class="line">    <span class="keyword">private</span> <span class="keyword">sealed</span> <span class="keyword">class</span> EmptyStack : IStack&lt;T&gt;</div><div class="line">    {</div><div class="line">        <span class="keyword">public</span> <span class="keyword">bool</span> IsEmpty { <span class="keyword">get</span> { <span class="keyword">return</span> <span class="keyword">true</span>; } }</div><div class="line">        <span class="keyword">public</span> T <span class="title">Peek</span>() { <span class="keyword">throw</span> <span class="keyword">new</span> Exception(<span class="string">"Empty stack"</span>); }</div><div class="line">        <span class="keyword">public</span> IStack&lt;T&gt; <span class="title">Push</span>(T <span class="keyword">value</span>) { <span class="keyword">return</span> <span class="keyword">new</span> Stack&lt;T&gt;(<span class="keyword">value</span>, <span class="keyword">this</span>); }</div><div class="line">        <span class="keyword">public</span> IStack&lt;T&gt; <span class="title">Pop</span>() { <span class="keyword">throw</span> <span class="keyword">new</span> Exception(<span class="string">"Empty stack"</span>); }</div><div class="line">        <span class="keyword">public</span> IEnumerator&lt;T&gt; <span class="title">GetEnumerator</span>() { <span class="keyword">yield</span> <span class="keyword">break</span>; }</div><div class="line">        IEnumerator IEnumerable.GetEnumerator() { <span class="keyword">return</span> <span class="keyword">this</span>.GetEnumerator(}</div><div class="line">    }</div><div class="line">    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">readonly</span> EmptyStack empty = <span class="keyword">new</span> EmptyStack();</div><div class="line">    <span class="keyword">public</span> <span class="keyword">static</span> IStack&lt;T&gt; Empty { <span class="keyword">get</span> { <span class="keyword">return</span> empty; } }</div><div class="line">    <span class="keyword">private</span> <span class="keyword">readonly</span> T head;</div><div class="line">    <span class="keyword">private</span> <span class="keyword">readonly</span> IStack&lt;T&gt; tail;</div><div class="line">    <span class="keyword">private</span> <span class="title">Stack</span>(T head, IStack&lt;T&gt; tail)</div><div class="line">    {</div><div class="line">        <span class="keyword">this</span>.head = head;</div><div class="line">        <span class="keyword">this</span>.tail = tail;</div><div class="line">    }</div><div class="line">    <span class="keyword">public</span> <span class="keyword">bool</span> IsEmpty { <span class="keyword">get</span> { <span class="keyword">return</span> <span class="keyword">false</span>; } }</div><div class="line">    <span class="keyword">public</span> T <span class="title">Peek</span>() { <span class="keyword">return</span> head; }</div><div class="line">    <span class="keyword">public</span> IStack&lt;T&gt; <span class="title">Pop</span>() { <span class="keyword">return</span> tail; }</div><div class="line">    <span class="keyword">public</span> IStack&lt;T&gt; <span class="title">Push</span>(T <span class="keyword">value</span>) { <span class="keyword">return</span> <span class="keyword">new</span> Stack&lt;T&gt;(<span class="keyword">value</span>, <span class="keyword">this</span>); }</div><div class="line">    <span class="keyword">public</span> IEnumerator&lt;T&gt; <span class="title">GetEnumerator</span>()</div><div class="line">    {</div><div class="line">        <span class="keyword">for</span>(IStack&lt;T&gt; stack = <span class="keyword">this</span>; !stack.IsEmpty ; stack = stack.Pop())</div><div class="line">            <span class="keyword">yield</span> <span class="keyword">return</span> stack.Peek();</div><div class="line">    }</div><div class="line">    IEnumerator IEnumerable.GetEnumerator() {<span class="keyword">return</span> <span class="keyword">this</span>.GetEnumerator();}</div><div class="line">}</div></pre></td></tr></table></figure>
+
+<p>And now we can easily create stacks and push stuff onto them. Notice how the fact that we have immutability means that stacks with the same tail can share state, saving on memory:</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">IStack&lt;<span class="keyword">int</span>&gt; s1 = Stack&lt;<span class="keyword">int</span>&gt;.Empty;</div><div class="line">IStack&lt;<span class="keyword">int</span>&gt; s2 = s1.<span class="keyword">Push</span>(<span class="number">10</span>);</div><div class="line">IStack&lt;<span class="keyword">int</span>&gt; s3 = s2.<span class="keyword">Push</span>(<span class="number">20</span>);</div><div class="line">IStack&lt;<span class="keyword">int</span>&gt; s4 = s2.<span class="keyword">Push</span>(<span class="number">30</span>); <span class="comment">// shares its tail with s3.</span></div></pre></td></tr></table></figure>
+
+<p>Painless. Next time: a variant variation on this theme.</p>
+
+      
+    </div>
+    
+      
+    
+  </div>
+</article>
+
+
+
+
+<article class="post">
+  <div class="post-content">
+    <header>
+      
+  
     <h1 class="title"><a href="/2014/10/27/random-thought/">随想</a></h1>
   
 
