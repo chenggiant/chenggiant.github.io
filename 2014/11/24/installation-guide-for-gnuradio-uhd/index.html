@@ -80,35 +80,49 @@ Change the boot order of the laptop then boo">
 <li><p>Change the boot order of the laptop then boot from the USB stick. For Windows 8, disable the secure boot and may also need to change the boot type for compatibility issues. </p>
 </li>
 <li><p>Partition the disk:</p>
-</li>
-</ol>
 <ul>
 <li>if the space is not enough, resize the disk in windows when necessary.</li>
-<li>select the primary partition: format - ext4 journal system, mount point - /</li>
+<li>select the primary partition: format - ext4 journal system, mount point /</li>
 <li>make one swap partition with size around 5 GB.</li>
 </ul>
-<ol>
-<li>Follow all steps as instructed.</li>
+</li>
+<li><p>Follow all steps as instructed.</p>
+</li>
 </ol>
 <h3 id="Install_GNURadio_and_UHD:">Install GNURadio and UHD:</h3>
 <ol>
 <li>Modify the source by changing the source list:</li>
 </ol>
-<figure class="highlight sudo"><figcaption><span>gedit</span><a href="/etc/apt/source.list```">link</a></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">Then, copy <span class="operator">the</span> following <span class="built_in">to</span> <span class="operator">the</span> top <span class="operator">of</span> <span class="operator">the</span> list (this will choose <span class="operator">the</span> best server <span class="keyword">for</span> downloading software):</div></pre></td></tr></table></figure>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo gedit /etc/apt/<span class="keyword">source</span>.<span class="keyword">list</span></div></pre></td></tr></table></figure>
 
-<p>deb mirror://mirrors.ubuntu.com/mirrors.txt precise main restricted universe multiverse<br>deb mirror://mirrors.ubuntu.com/mirrors.txt precise-updates main restricted universe multiverse<br>deb mirror://mirrors.ubuntu.com/mirrors.txt precise-backports main restricted universe multiverse<br>deb mirror://mirrors.ubuntu.com/mirrors.txt precise-security main restricted universe multiverse</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">At <span class="keyword">last</span>, <span class="keyword">update</span> the lis<span class="variable">t:</span></div></pre></td></tr></table></figure>
 
-<p>sudo apt-get update</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"><span class="number">2.</span> Download <span class="keyword">and</span> <span class="command">run script</span> <span class="keyword">to</span> install GNURadio;</div></pre></td></tr></table></figure>
+<pre><code>Then, copy <span class="operator">the</span> following <span class="built_in">to</span> <span class="operator">the</span> top <span class="operator">of</span> <span class="operator">the</span> list (this will choose <span class="operator">the</span> best server <span class="keyword">for</span> downloading software):
+</code></pre><figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="title">deb</span> <span class="url">mirror://mirrors.ubuntu.com/mirrors.txt</span> precise main restricted universe multiverse</div><div class="line">deb <span class="url">mirror://mirrors.ubuntu.com/mirrors.txt</span> precise-updates main restricted universe multiverse</div><div class="line">deb <span class="url">mirror://mirrors.ubuntu.com/mirrors.txt</span> precise-backports main restricted universe multiverse</div><div class="line">deb <span class="url">mirror://mirrors.ubuntu.com/mirrors.txt</span> precise-security main restricted universe multiverse</div></pre></td></tr></table></figure>
 
-<p>sudo apt-get -y install git-core autoconf automake  libtool g++ python-dev swig \<br>pkg-config libboost1.48-all-dev libfftw3-dev libcppunit-dev libgsl0-dev \<br>libusb-dev sdcc libsdl1.2-dev python-wxgtk2.8 python-numpy \<br>python-cheetah python-lxml doxygen python-qt4 python-qwt5-qt4 libxi-dev \<br>libqt4-opengl-dev libqwt5-qt4-dev libfontconfig1-dev libxrender-dev </p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">3. Build GNURadio and UHD</div><div class="line"></div><div class="line"><span class="operator"><span class="keyword">use</span> the <span class="string">`-o`</span> <span class="keyword">option</span> <span class="keyword">to</span> download the stable <span class="keyword">version</span> <span class="keyword">of</span> GNURadio</span></div></pre></td></tr></table></figure>
+<pre><code>At <span class="keyword">last</span>, <span class="keyword">update</span> the lis<span class="variable">t:</span> 
+</code></pre><figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo apt-<span class="built_in">get</span> <span class="keyword">update</span></div></pre></td></tr></table></figure>
 
-<p>wget <a href="http://www.sbrac.org/files/build-gnuradio" target="_blank" rel="external">http://www.sbrac.org/files/build-gnuradio</a> &amp;&amp; chmod a+x ./build-gnuradio &amp;&amp; ./build-gnuradio -o</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"><span class="bullet">4. </span>For other version of Ubuntu systems, check this [<span class="link_label">GNURadio page</span>](<span class="link_url">http://gnuradio.org/redmine/projects/gnuradio/wiki/UbuntuInstall#Install-Dependencies</span>) for more information.</div><div class="line"></div><div class="line"><span class="header">### Optional</span></div><div class="line"><span class="code">    </span></div><div class="line"><span class="bullet">1. </span>install NTP</div></pre></td></tr></table></figure>
+<ol>
+<li>Download and run script to install GNURadio;</li>
+</ol>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">sudo apt-<span class="built_in">get</span> -<span class="keyword">y</span> install git-core autoconf automake  libtool <span class="keyword">g</span>++ <span class="keyword">python</span>-dev swig \</div><div class="line">pkg-config libboost1.<span class="number">48</span>-<span class="keyword">all</span>-dev libfftw3-dev libcppunit-dev libgsl0-dev \</div><div class="line">libusb-dev sdcc libsdl1.<span class="number">2</span>-dev <span class="keyword">python</span>-wxgtk2.<span class="number">8</span> <span class="keyword">python</span>-numpy \</div><div class="line"><span class="keyword">python</span>-cheetah <span class="keyword">python</span>-lxml doxygen <span class="keyword">python</span>-qt4 <span class="keyword">python</span>-qwt5-qt4 libxi-dev \</div><div class="line">libqt4-opengl-dev libqwt5-qt4-dev libfontconfig1-dev libxrender-dev</div></pre></td></tr></table></figure>
 
-<p>sudo apt-get install ntp```</p>
+<ol>
+<li><p>Build GNURadio and UHD</p>
+<p> use the <code>-o</code> option to download the stable version of GNURadio</p>
+</li>
+</ol>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">wget <span class="keyword">http</span>://www.sbrac.org/<span class="built_in">files</span>/build-gnuradio && chmod <span class="operator">a</span>+x ./build-gnuradio && ./build-gnuradio -o</div></pre></td></tr></table></figure>
+
+<ol>
+<li>For other version of Ubuntu systems, check this <a href="http://gnuradio.org/redmine/projects/gnuradio/wiki/UbuntuInstall#Install-Dependencies" target="_blank" rel="external">GNURadio page</a> for more information.</li>
+</ol>
+<h3 id="Optional">Optional</h3>
+<ol>
+<li>Install NTP</li>
+</ol>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">sudo</span> apt-get install ntp</div></pre></td></tr></table></figure>
+
 
       
     </div>
