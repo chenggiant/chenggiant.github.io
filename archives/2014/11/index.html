@@ -1,0 +1,175 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>6Path › 归档：2014/11</title>
+  <meta name="author" content="Chi">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  
+  <meta property="og:site_name" content="6Path"/>
+
+  
+    <meta property="og:image" content="undefined"/>
+  
+
+  <link href="/favicon.png" rel="icon">
+  <link rel="alternate" href="/atom.xml" title="6Path" type="application/atom+xml">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-20481981-7']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+</head>
+
+
+<body>
+  <header id="header"><div class="meta inner">
+  <h1><a href="/">6Path</a></h1>
+  <h2><a href="/"></a></h2>
+  <nav id="main-nav">
+    <ul>
+      
+      <li><a href="/">Home</a></li>
+      
+      <li><a href="/archives">Archives</a></li>
+      
+    </ul>
+    <div class="clearfix"></div>
+  </nav>
+</div>
+<div class="clearfix"></div>
+</header>
+  <div id="content" class="inner">
+    <div id="main-col" class="alignleft"><div id="wrapper">
+<h2 class="archive-title">2014/11</h2>
+
+
+<article class="post">
+  <div class="post-content">
+    <header>
+      
+  
+    <h1 class="title"><a href="/2014/11/24/installation-guide-for-gnuradio-uhd/">installation-guide-for-gnuradio-uhd</a></h1>
+  
+
+      
+      <time datetime="2014-11-24T13:19:43.000Z">11月 24 2014</time>
+      
+    </header>
+    <div class="entry">
+      
+        <h3 id="Install_Ubuntu_12-04_LTS:">Install Ubuntu 12.04 LTS:</h3>
+<ol>
+<li><p>Make a liveUSB with software like <a href="http://rufus.akeo.ie/" target="_blank" rel="external">Rufus</a>, need to download Ubuntu image first.</p>
+</li>
+<li><p>Change the boot order of the laptop then boot from the USB stick. For Windows 8, disable the secure boot and may also need to change the boot type for compatibility issues. </p>
+</li>
+<li><p>Partition the disk:</p>
+<ul>
+<li>if the space is not enough, resize the disk in windows when necessary.</li>
+<li>select the primary partition: format - ext4 journal system, mount point - /</li>
+<li>make one swap partition with size around 5 GB.</li>
+</ul>
+</li>
+<li><p>Follow all steps as instructed.</p>
+</li>
+</ol>
+<h3 id="Install_GNURadio_and_UHD:">Install GNURadio and UHD:</h3>
+<ol>
+<li>Modify the source by changing the source list:</li>
+</ol>
+<figure class="highlight sudo"><figcaption><span>gedit</span><a href="/etc/apt/source.list```">link</a></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">Then, copy <span class="operator">the</span> following <span class="built_in">to</span> <span class="operator">the</span> top <span class="operator">of</span> <span class="operator">the</span> list (this will choose <span class="operator">the</span> best server <span class="keyword">for</span> downloading software):</div></pre></td></tr></table></figure>
+
+<pre><code><span class="title">deb</span> <span class="url">mirror://mirrors.ubuntu.com/mirrors.txt</span> precise main restricted universe multiverse
+deb <span class="url">mirror://mirrors.ubuntu.com/mirrors.txt</span> precise-updates main restricted universe multiverse
+deb <span class="url">mirror://mirrors.ubuntu.com/mirrors.txt</span> precise-backports main restricted universe multiverse
+deb <span class="url">mirror://mirrors.ubuntu.com/mirrors.txt</span> precise-security main restricted universe multiverse
+</code></pre><figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">At <span class="keyword">last</span>, <span class="keyword">update</span> the lis<span class="variable">t:</span></div></pre></td></tr></table></figure>
+
+<p>sudo apt-get update</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"><span class="number">2.</span> Download <span class="keyword">and</span> <span class="command">run script</span> <span class="keyword">to</span> install GNURadio;</div></pre></td></tr></table></figure>
+
+<pre><code>sudo apt-<span class="built_in">get</span> -<span class="keyword">y</span> install git-core autoconf automake  libtool <span class="keyword">g</span>++ <span class="keyword">python</span>-dev swig \
+</code></pre><p>pkg-config libboost1.48-all-dev libfftw3-dev libcppunit-dev libgsl0-dev \<br>libusb-dev sdcc libsdl1.2-dev python-wxgtk2.8 python-numpy \<br>python-cheetah python-lxml doxygen python-qt4 python-qwt5-qt4 libxi-dev \<br>libqt4-opengl-dev libqwt5-qt4-dev libfontconfig1-dev libxrender-dev </p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">3. Build GNURadio and UHD</div><div class="line"></div><div class="line">    <span class="operator"><span class="keyword">use</span> the <span class="string">`-o`</span> <span class="keyword">option</span> <span class="keyword">to</span> download the stable <span class="keyword">version</span> <span class="keyword">of</span> GNURadio</span></div></pre></td></tr></table></figure>
+
+<p>wget <a href="http://www.sbrac.org/files/build-gnuradio" target="_blank" rel="external">http://www.sbrac.org/files/build-gnuradio</a> &amp;&amp; chmod a+x ./build-gnuradio &amp;&amp; ./build-gnuradio -o</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"><span class="bullet">4. </span>For other version of Ubuntu systems, check this [<span class="link_label">GNURadio page</span>](<span class="link_url">http://gnuradio.org/redmine/projects/gnuradio/wiki/UbuntuInstall#Install-Dependencies</span>) for more information.</div><div class="line"></div><div class="line"><span class="header">### Optional</span></div><div class="line"><span class="code">    </span></div><div class="line"><span class="bullet">1. </span>install NTP</div></pre></td></tr></table></figure>
+
+<p>sudo apt-get install ntp```</p>
+
+      
+    </div>
+    
+      
+    
+  </div>
+</article>
+
+
+
+
+<div class="pagination">
+  <table width='100%'>
+    <tbody>
+    <tr>
+      <td width='120' align='left'>
+        
+      </td>
+      <td width='auto' align='center'>
+          <a href="/archives/">文章归档</a>
+      </td>
+      <td width='120' align='right'>
+        
+      </td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+
+
+
+
+</div></div>
+    <div class="clearfix"></div>
+  </div>
+  <footer id="footer"><div class="inner"><div class="alignleft">
+  <p>
+  
+    &copy; 2014 Chi
+  
+  </p>
+  <p>
+    <a href="http://github.com/willerce/hexo-theme-noderce">Noderce</a> Theme By <a href="http://willerce.com" >willerce</a>
+  </p>
+
+</div>
+<div class="clearfix"></div></div></footer>
+  <script type="text/javascript">
+
+var disqus_shortname = 'chenggiant';
+(function(){
+  var dsq = document.createElement('script');
+  dsq.type = 'text/javascript';
+  dsq.async = true;
+  dsq.src = '//' + disqus_shortname + '.disqus.com/count.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+}());
+
+</script>
+
+</body>
+</html>
