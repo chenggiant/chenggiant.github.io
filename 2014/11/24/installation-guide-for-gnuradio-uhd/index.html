@@ -90,38 +90,26 @@ Change the boot order of the laptop then boo">
 </li>
 </ol>
 <h3 id="Install_GNURadio_and_UHD:">Install GNURadio and UHD:</h3>
-<ol>
-<li>Modify the source by changing the source list:</li>
-</ol>
+<h4 id="Modify_the_source_by_changing_the_source_list:">Modify the source by changing the source list:</h4>
 <figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo gedit /etc/apt/<span class="keyword">source</span>.<span class="keyword">list</span></div></pre></td></tr></table></figure>
 
+<p>Then, copy the following to the top of the list (this will choose the best server for downloading software):</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="title">deb</span> <span class="url">mirror://mirrors.ubuntu.com/mirrors.txt</span> precise main restricted universe multiverse</div><div class="line">deb <span class="url">mirror://mirrors.ubuntu.com/mirrors.txt</span> precise-updates main restricted universe multiverse</div><div class="line">deb <span class="url">mirror://mirrors.ubuntu.com/mirrors.txt</span> precise-backports main restricted universe multiverse</div><div class="line">deb <span class="url">mirror://mirrors.ubuntu.com/mirrors.txt</span> precise-security main restricted universe multiverse</div></pre></td></tr></table></figure>
 
-<pre><code>Then, copy <span class="operator">the</span> following <span class="built_in">to</span> <span class="operator">the</span> top <span class="operator">of</span> <span class="operator">the</span> list (this will choose <span class="operator">the</span> best server <span class="keyword">for</span> downloading software):
-</code></pre><figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="title">deb</span> <span class="url">mirror://mirrors.ubuntu.com/mirrors.txt</span> precise main restricted universe multiverse</div><div class="line">deb <span class="url">mirror://mirrors.ubuntu.com/mirrors.txt</span> precise-updates main restricted universe multiverse</div><div class="line">deb <span class="url">mirror://mirrors.ubuntu.com/mirrors.txt</span> precise-backports main restricted universe multiverse</div><div class="line">deb <span class="url">mirror://mirrors.ubuntu.com/mirrors.txt</span> precise-security main restricted universe multiverse</div></pre></td></tr></table></figure>
+<p>At last, update the list: </p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo apt-<span class="built_in">get</span> <span class="keyword">update</span></div></pre></td></tr></table></figure>
 
-
-<pre><code>At <span class="keyword">last</span>, <span class="keyword">update</span> the lis<span class="variable">t:</span> 
-</code></pre><figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo apt-<span class="built_in">get</span> <span class="keyword">update</span></div></pre></td></tr></table></figure>
-
-<ol>
-<li>Download and run script to install GNURadio;</li>
-</ol>
+<h4 id="Download_and_run_script_to_install_GNURadio;">Download and run script to install GNURadio;</h4>
 <figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">sudo apt-<span class="built_in">get</span> -<span class="keyword">y</span> install git-core autoconf automake  libtool <span class="keyword">g</span>++ <span class="keyword">python</span>-dev swig \</div><div class="line">pkg-config libboost1.<span class="number">48</span>-<span class="keyword">all</span>-dev libfftw3-dev libcppunit-dev libgsl0-dev \</div><div class="line">libusb-dev sdcc libsdl1.<span class="number">2</span>-dev <span class="keyword">python</span>-wxgtk2.<span class="number">8</span> <span class="keyword">python</span>-numpy \</div><div class="line"><span class="keyword">python</span>-cheetah <span class="keyword">python</span>-lxml doxygen <span class="keyword">python</span>-qt4 <span class="keyword">python</span>-qwt5-qt4 libxi-dev \</div><div class="line">libqt4-opengl-dev libqwt5-qt4-dev libfontconfig1-dev libxrender-dev</div></pre></td></tr></table></figure>
 
-<ol>
-<li><p>Build GNURadio and UHD</p>
-<p> use the <code>-o</code> option to download the stable version of GNURadio</p>
-</li>
-</ol>
+<p>use the <code>-o</code> option to download the stable version of GNURadio</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">wget <span class="keyword">http</span>://www.sbrac.org/<span class="built_in">files</span>/build-gnuradio && chmod <span class="operator">a</span>+x ./build-gnuradio && ./build-gnuradio -o</div></pre></td></tr></table></figure>
 
 <ol>
 <li>For other version of Ubuntu systems, check this <a href="http://gnuradio.org/redmine/projects/gnuradio/wiki/UbuntuInstall#Install-Dependencies" target="_blank" rel="external">GNURadio page</a> for more information.</li>
 </ol>
 <h3 id="Optional">Optional</h3>
-<ol>
-<li>Install NTP</li>
-</ol>
+<h4 id="Install_NTP">Install NTP</h4>
 <figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">sudo</span> apt-get install ntp</div></pre></td></tr></table></figure>
 
 
