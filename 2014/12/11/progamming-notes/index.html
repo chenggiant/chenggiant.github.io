@@ -1,0 +1,141 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>6Path › 编程笔记</title>
+  <meta name="author" content="Chi">
+  
+  <meta name="description" content="背景
+今天做面试题目。题目的要求还很好满足，10分钟不到就写完了。但是纠结data type的时候花了好久，最后越来越紧张，直到最后被迫提交答案了都还没解决…
+纠结data type其实就是因为题目有个要求是，计算的结果如果大于2147483647就return -1。
+纠结
+其实主要的纠结就是in">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:title" content="编程笔记"/>
+  <meta property="og:site_name" content="6Path"/>
+
+  
+    <meta property="og:image" content="undefined"/>
+  
+
+  <link href="/favicon.png" rel="icon">
+  <link rel="alternate" href="/atom.xml" title="6Path" type="application/atom+xml">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-20481981-7']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+</head>
+
+
+<body>
+  <header id="header"><div class="meta inner">
+  <h1><a href="/">6Path</a></h1>
+  <h2><a href="/"></a></h2>
+  <nav id="main-nav">
+    <ul>
+      
+      <li><a href="/">Home</a></li>
+      
+      <li><a href="/archives">Archives</a></li>
+      
+    </ul>
+    <div class="clearfix"></div>
+  </nav>
+</div>
+<div class="clearfix"></div>
+</header>
+  <div id="content" class="inner">
+    <div id="main-col" class="alignleft"><div id="wrapper"><article class="post">
+  <div class="post-content">
+    <header>
+      
+  
+    <h1 class="title">编程笔记</h1>
+  
+
+      
+      <time datetime="2014-12-11T02:34:14.000Z">12月 11 2014</time>
+      
+    </header>
+    <div class="entry">
+      
+        <h3 id="背景">背景</h3>
+<p>今天做面试题目。题目的要求还很好满足，10分钟不到就写完了。但是纠结data type的时候花了好久，最后越来越紧张，直到最后被迫提交答案了都还没解决…</p>
+<p>纠结data type其实就是因为题目有个要求是，计算的结果如果大于2147483647就return -1。</p>
+<h3 id="纠结">纠结</h3>
+<p>其实主要的纠结就是<code>int a</code>和<code>int b</code>相乘，结果会overflow。于是就想着把相乘的结果cast到double，然后和2147483647比大小判定。</p>
+<p>然后就囧了，不知道当时怎么整的！怎么test结果都不对…其实就是这么一行code…<code>double c = (double)a * b</code></p>
+<h3 id="总结">总结</h3>
+<p>现在想来真丢脸啊，还是不应该没睡醒就做题啊…以后要记住了</p>
+<blockquote>
+<p>int_32和int_32相乘，还是int_32，丢掉了前面的32个比特！要解决这个问题，cast其中一个int_32到一个64位的数就可以了…gcc会自动的达到我们想要的32*32-&gt;64！</p>
+</blockquote>
+<p>你们知道前面那个纠结我纠结了多久么？50分钟…答案提交后我5分钟就找到答案了，我真的太容易不淡定了！</p>
+
+      
+    </div>
+    
+    <footer>
+      <div class="alignleft">
+      
+      
+      </div>
+      <div class="clearfix"></div>
+    </footer>
+    
+  </div>
+</article>
+
+
+<section id="comment">
+  
+  <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </div>
+  
+</section>
+
+</div></div>
+    <div class="clearfix"></div>
+  </div>
+  <footer id="footer"><div class="inner"><div class="alignleft">
+  <p>
+  
+    &copy; 2014 Chi
+  
+  </p>
+  <p>
+    <a href="http://github.com/willerce/hexo-theme-noderce">Noderce</a> Theme By <a href="http://willerce.com" >willerce</a>
+  </p>
+
+</div>
+<div class="clearfix"></div></div></footer>
+  <script type="text/javascript">
+
+var disqus_shortname = 'chenggiant';
+(function(){
+  var dsq = document.createElement('script');
+  dsq.type = 'text/javascript';
+  dsq.async = true;
+  dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+}());
+
+</script>
+
+</body>
+</html>

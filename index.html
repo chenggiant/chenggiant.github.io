@@ -59,6 +59,44 @@
     <header>
       
   
+    <h1 class="title"><a href="/2014/12/11/progamming-notes/">编程笔记</a></h1>
+  
+
+      
+      <time datetime="2014-12-11T02:34:14.000Z">12月 11 2014</time>
+      
+    </header>
+    <div class="entry">
+      
+        <h3 id="背景">背景</h3>
+<p>今天做面试题目。题目的要求还很好满足，10分钟不到就写完了。但是纠结data type的时候花了好久，最后越来越紧张，直到最后被迫提交答案了都还没解决…</p>
+<p>纠结data type其实就是因为题目有个要求是，计算的结果如果大于2147483647就return -1。</p>
+<h3 id="纠结">纠结</h3>
+<p>其实主要的纠结就是<code>int a</code>和<code>int b</code>相乘，结果会overflow。于是就想着把相乘的结果cast到double，然后和2147483647比大小判定。</p>
+<p>然后就囧了，不知道当时怎么整的！怎么test结果都不对…其实就是这么一行code…<code>double c = (double)a * b</code></p>
+<h3 id="总结">总结</h3>
+<p>现在想来真丢脸啊，还是不应该没睡醒就做题啊…以后要记住了</p>
+<blockquote>
+<p>int_32和int_32相乘，还是int_32，丢掉了前面的32个比特！要解决这个问题，cast其中一个int_32到一个64位的数就可以了…gcc会自动的达到我们想要的32*32-&gt;64！</p>
+</blockquote>
+<p>你们知道前面那个纠结我纠结了多久么？50分钟…答案提交后我5分钟就找到答案了，我真的太容易不淡定了！</p>
+
+      
+    </div>
+    
+      
+    
+  </div>
+</article>
+
+
+
+
+  <article class="post">
+  <div class="post-content">
+    <header>
+      
+  
     <h1 class="title"><a href="/2014/11/24/installation-guide-for-gnuradio-uhd/">Installation Guide for GNURadio and UHD</a></h1>
   
 
