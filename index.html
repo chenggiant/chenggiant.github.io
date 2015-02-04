@@ -493,6 +493,215 @@
         
 
         
+          <div class="post-eof the-shape"></div>
+        
+      </div>
+    
+  </div>
+
+
+  
+    
+
+  <div class="post post-type-normal ">
+    <div class="post-header">
+
+      <div class="post-meta">
+          <span class="post-time">
+            
+              Posted on 2014-10-26
+            
+          </span>
+      </div>
+
+      
+      
+        <h1 class="post-title">
+          
+          
+            
+              <a class="post-title-link" href="/2014/10/26/play-static-blogging/">
+                折腾各种静态博客
+              </a>
+            
+          
+        </h1>
+      
+    </div>
+
+    
+      <div class="post-body">
+
+        
+        
+
+        
+          <h3 id="开始">开始</h3>
+<p>本来懒得折腾，用Tumblr来着。但Tumblr对Markdown的支持是在是太差了，而且主题折腾起来还是觉得不够自由，写了4篇文章后就受不了了。于是又开始了选择，对比，尝试。这个过程是那么的是曾相识！该用什么文本编辑器、哪个PIM软件最强大、学习什么语言好、学C看哪本书入门、用什么App看Twitter、买哪个VPS服务性价比最高…为了这些，不知浪费了多少天，看了多少评测文章，绝对是没完没了。到最后，都忘记了自己为什么要对比来着。</p>
+<p>但是…我还是开始折腾静态博客了！今天的问题是：该用哪个静态博客了？</p>
+<p>为了寻找答案，于是在网上开始到处看了，Octopress，Jekyll，Ghost，Hexo，Pelican…</p>
+<p>几乎按着顺序挨个尝试了一遍，各种未预料到的问题，终于这个博客用Hexo给搭起来了。完全不会node.js，Ruby啥的，我会乱说么…但就是爱看各种对比文章，各种推荐软文…这应该是病，得电击。</p>
+<p>对了，在这个过程中，我还测试了Markdown编辑器哦，Stackedit，Cmd Markdown，Mou，Macdown…</p>
+<h3 id="结束">结束</h3>
+<p>完了！今天本来是要做leetcode的题目来着，开博客目的是要记录leetcode的做题笔记来着…</p>
+<p>忘了吧…</p>
+<p>嗯，其实对现在的这个主题还不是很满意。我会回来的…</p>
+
+        
+
+      </div>
+    
+
+    
+      <div class="post-footer">
+        
+
+        
+
+        
+          <div class="post-eof the-shape"></div>
+        
+      </div>
+    
+  </div>
+
+
+  
+    
+
+  <div class="post post-type-normal ">
+    <div class="post-header">
+
+      <div class="post-meta">
+          <span class="post-time">
+            
+              Posted on 2014-10-26
+            
+          </span>
+      </div>
+
+      
+      
+        <h1 class="post-title">
+          
+          
+            
+              <a class="post-title-link" href="/2014/10/26/use-thunmdrive-to-fix-grub2/">
+                用U盘修复GRUB2教程
+              </a>
+            
+          
+        </h1>
+      
+    </div>
+
+    
+      <div class="post-body">
+
+        
+        
+
+        
+          <p>不管你是调整分区大小，还是安装了新系统，也可能是没睡醒做了该剁手的事情，GRUB2经常会被破坏掉。</p>
+<p>今天这个事情就发生在了我身上…手抖的删掉了一个分区，然后直接点了重启。于是开机时卡在GRUB RESCURE了。</p>
+<p>下面就是重新安装GRUB的流程了。</p>
+<h3 id="挂载分区">挂载分区</h3>
+<p>挂载ubuntu安装的分区。可以用GParted或者Disk Utility来查看。通常是ext4格式的那个区。找到后就输入对应的命令了。比如ext4是对应<code>/dev/sda5</code>的，命令如下：</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">sudo</span> mount /dev/sda5 /mnt</div></pre></td></tr></table></figure>
+
+<p>让GRUB检测下电脑里还有那些操作系统，比如Windows或者旧版的Linux：</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">sudo mount --<span class="keyword">bind</span> /dev /mnt/dev &&</div><div class="line">sudo mount --<span class="keyword">bind</span> /dev/pts /mnt/dev/pts &&</div><div class="line">sudo mount --<span class="keyword">bind</span> /<span class="keyword">proc</span> /mnt/<span class="keyword">proc</span> &&</div><div class="line">sudo mount --<span class="keyword">bind</span> /sys /mnt/sys</div></pre></td></tr></table></figure>
+
+<h3 id="修复GRUB">修复GRUB</h3>
+<p>挂载操作完了，开始<code>chroot</code>到挂载点来更新吧：</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">sudo</span> chroot /mnt</div></pre></td></tr></table></figure>
+
+<p>开始安装，检查，更新GRUB吧。下面的命令就不用指定<code>sda5</code>了，直接<code>sda</code>就好：</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">grub-<span class="operator"><span class="keyword">install</span> /dev/sda</span></div><div class="line">grub-<span class="keyword">install</span> <span class="comment">--recheck /dev/sda</span></div><div class="line"><span class="keyword">update</span>-grub</div></pre></td></tr></table></figure>
+
+<p>成功的话，output里面会列出电脑里安装了的所有系统。</p>
+<h3 id="取消挂载">取消挂载</h3>
+<p>然后就是取消挂载了，是<code>umount</code>哦，不是unmount：</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">exit &&</div><div class="line">sudo umount /mnt/sys &&</div><div class="line">sudo umount /mnt/<span class="keyword">proc</span> &&</div><div class="line">sudo umount /mnt/dev/pts &&</div><div class="line">sudo umount /mnt/dev &&</div><div class="line">sudo umount /mnt</div></pre></td></tr></table></figure>
+
+<p>然后重启吧。再开机应该就是熟悉的启动画面了。</p>
+
+        
+
+      </div>
+    
+
+    
+      <div class="post-footer">
+        
+
+        
+
+        
+          <div class="post-eof the-shape"></div>
+        
+      </div>
+    
+  </div>
+
+
+  
+    
+
+  <div class="post post-type-normal ">
+    <div class="post-header">
+
+      <div class="post-meta">
+          <span class="post-time">
+            
+              Posted on 2014-10-26
+            
+          </span>
+      </div>
+
+      
+      
+        <h1 class="post-title">
+          
+          
+            
+              <a class="post-title-link" href="/2014/10/26/Hexo-problem-when-changing-theme/">
+                Hexo2.8切换主题会遇到的问题
+              </a>
+            
+          
+        </h1>
+      
+    </div>
+
+    
+      <div class="post-body">
+
+        
+        
+
+        
+          <h3 id="问题">问题</h3>
+<p>在_config.yml里面更改了主题名称后，运行<code>hexo generate</code>会看到如下错误：</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="attribute">message</span>: <span class="string">'Process failed: languages/de.yml',</span></div></pre></td></tr></table></figure>
+
+<h3 id="解决方法">解决方法</h3>
+<p>Github上有讨论：<a href="https://github.com/hexojs/hexo/issues/722" target="_blank" rel="external">https://github.com/hexojs/hexo/issues/722</a></p>
+<p>解决的方法很简单，就是要对第三方主题的languages文件夹下面的yml文件做出修改：<strong>value的值里面有空格的，需要都用双引号括住</strong>。</p>
+<p><img src="https://cloud.githubusercontent.com/assets/2100515/3622133/2b419004-0e29-11e4-8977-a663954d8986.png" alt=""></p>
+
+        
+
+      </div>
+    
+
+    
+      <div class="post-footer">
+        
+
+        
+
+        
       </div>
     
   </div>
