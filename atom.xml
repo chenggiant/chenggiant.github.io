@@ -1,121 +1,26 @@
-<!doctype html>
-<html lang="zh">
-<head>
-  <meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-
-
-  <link rel="stylesheet" type="text/css" href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5"/>
-
-
-<link rel="stylesheet" type="text/css" href="/css/main.css?v=0.1.3"/>
-
-
-
-
-
-
-    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-
-
-
-  <title> 6Path </title>
-</head>
-
-<body>
-  <div class="container one-column ">
-
-    <div id="header" class="header">
-      <div class="header-inner">
-        
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title><![CDATA[6Path]]></title>
   
-    
+  <link href="/atom.xml" rel="self"/>
+  <link href="http://blog.6path.com/"/>
+  <updated>2015-02-04T04:34:02.500Z</updated>
+  <id>http://blog.6path.com/</id>
   
-
-
-<h1 class="site-meta">
-    <a href="/" class="brand">
-        <span class="logo the-shape"></span>
-        <span class="site-title">6Path</span>
-    </a>
-</h1>
-
-
-  <ul id="menu" class="menu">
+  <author>
+    <name><![CDATA[Chi]]></name>
     
-      
-      <li class="menu-item menu-item-home">
-        <a href="/" title="Home">Home</a>
-      </li>
-    
-      
-      <li class="menu-item menu-item-archives">
-        <a href="/archives" title="Archives">Archives</a>
-      </li>
-    
-      
-      <li class="menu-item menu-item-tags">
-        <a href="/tags" title="Tags">Tags</a>
-      </li>
-    
-    
-      <li class="menu-item menu-item-feed">
-        <a href="/atom.xml">RSS</a>
-      </li>
-    
-  </ul>
-
-      </div>
-    </div>
-
-    <div id="main" class="main">
-      <div class="main-inner">
-        <div id="content" class="content">
-
-          
-            
-          
-
-          <div id="posts" class="posts-expand">
-            
+  </author>
   
-    
-
-  <div class="post post-type-normal ">
-    <div class="post-header">
-
-      <div class="post-meta">
-          <span class="post-time">
-            
-              Posted on 2014-12-11
-            
-          </span>
-      </div>
-
-      
-      
-        <h1 class="post-title">
-          
-          
-            
-              <a class="post-title-link" href="/2014/12/11/progamming-notes/">
-                编程笔记
-              </a>
-            
-          
-        </h1>
-      
-    </div>
-
-    
-      <div class="post-body">
-
-        
-        
-
-        
-          <h3 id="背景">背景</h3>
+  <generator uri="http://zespia.tw/hexo/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[编程笔记]]></title>
+    <link href="http://blog.6path.com/2014/12/11/progamming-notes/"/>
+    <id>http://blog.6path.com/2014/12/11/progamming-notes/</id>
+    <published>2014-12-11T02:34:14.000Z</published>
+    <updated>2014-12-11T02:57:24.000Z</updated>
+    <content type="html"><![CDATA[<h3 id="背景">背景</h3>
 <p>今天做面试题目。题目的要求还很好满足，10分钟不到就写完了。但是纠结data type的时候花了好久，最后越来越紧张，直到最后被迫提交答案了都还没解决…</p>
 <p>纠结data type其实就是因为题目有个要求是，计算的结果如果大于2147483647就return -1。</p>
 <h3 id="纠结">纠结</h3>
@@ -127,63 +32,22 @@
 <p>int_32和int_32相乘，还是int_32，丢掉了前面的32个比特！要解决这个问题，cast其中一个int_32到一个64位的数就可以了…gcc会自动的达到我们想要的32*32-&gt;64！</p>
 </blockquote>
 <p>你们知道前面那个纠结我纠结了多久么？50分钟…答案提交后我5分钟就找到答案了，我真的太容易不淡定了！</p>
-
-        
-
-      </div>
+]]></content>
+    <summary type="html">
+    <![CDATA[<h3 id="背景">背景</h3>
+<p>今天做面试题目。题目的要求还很好满足，10分钟不到就写完了。但是纠结data type的时候花了好久，最后越来越紧张，直到最后被迫提交答案了都还没解决…</p>
+<p>纠结data type其实就是因为题目有个要求是，计算的结果如果大]]>
+    </summary>
     
-
-    
-      <div class="post-footer">
-        
-
-        
-
-        
-          <div class="post-eof the-shape"></div>
-        
-      </div>
-    
-  </div>
-
-
+  </entry>
   
-    
-
-  <div class="post post-type-normal ">
-    <div class="post-header">
-
-      <div class="post-meta">
-          <span class="post-time">
-            
-              Posted on 2014-11-24
-            
-          </span>
-      </div>
-
-      
-      
-        <h1 class="post-title">
-          
-          
-            
-              <a class="post-title-link" href="/2014/11/24/installation-guide-for-gnuradio-uhd/">
-                Installation Guide for GNURadio and UHD
-              </a>
-            
-          
-        </h1>
-      
-    </div>
-
-    
-      <div class="post-body">
-
-        
-        
-
-        
-          <h3 id="Install_Ubuntu_12-04_LTS:">Install Ubuntu 12.04 LTS:</h3>
+  <entry>
+    <title><![CDATA[Installation Guide for GNURadio and UHD]]></title>
+    <link href="http://blog.6path.com/2014/11/24/installation-guide-for-gnuradio-uhd/"/>
+    <id>http://blog.6path.com/2014/11/24/installation-guide-for-gnuradio-uhd/</id>
+    <published>2014-11-24T13:19:43.000Z</published>
+    <updated>2014-11-24T13:53:26.000Z</updated>
+    <content type="html"><![CDATA[<h3 id="Install_Ubuntu_12-04_LTS:">Install Ubuntu 12.04 LTS:</h3>
 <ol>
 <li><p>Make a liveUSB with software like <a href="http://rufus.akeo.ie/" target="_blank" rel="external">Rufus</a>, need to download Ubuntu image first.</p>
 </li>
@@ -221,63 +85,22 @@
 <h4 id="Install_NTP">Install NTP</h4>
 <figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">sudo</span> apt-get install ntp</div></pre></td></tr></table></figure>
 
-
-        
-
-      </div>
+]]></content>
+    <summary type="html">
+    <![CDATA[<h3 id="Install_Ubuntu_12-04_LTS:">Install Ubuntu 12.04 LTS:</h3>
+<ol>
+<li><p>Make a liveUSB with software like <a href="http://rufus.akeo.i]]>
+    </summary>
     
-
-    
-      <div class="post-footer">
-        
-
-        
-
-        
-          <div class="post-eof the-shape"></div>
-        
-      </div>
-    
-  </div>
-
-
+  </entry>
   
-    
-
-  <div class="post post-type-normal ">
-    <div class="post-header">
-
-      <div class="post-meta">
-          <span class="post-time">
-            
-              Posted on 2014-10-30
-            
-          </span>
-      </div>
-
-      
-      
-        <h1 class="post-title">
-          
-          
-            
-              <a class="post-title-link" href="/2014/10/30/immutable-data-structure/">
-                实现Immutable Stack
-              </a>
-            
-          
-        </h1>
-      
-    </div>
-
-    
-      <div class="post-body">
-
-        
-        
-
-        
-          <h3 id="背景">背景</h3>
+  <entry>
+    <title><![CDATA[实现Immutable Stack]]></title>
+    <link href="http://blog.6path.com/2014/10/30/immutable-data-structure/"/>
+    <id>http://blog.6path.com/2014/10/30/immutable-data-structure/</id>
+    <published>2014-10-30T13:57:46.000Z</published>
+    <updated>2014-10-30T14:12:24.000Z</updated>
+    <content type="html"><![CDATA[<h3 id="背景">背景</h3>
 <p>最近需要实现Immutable的数据结构，于是开始在网上找相关的资料，找到了一个微软大牛写的<a href="http://blogs.msdn.com/b/ericlippert/archive/2007/11/13/immutability-in-c-part-one-kinds-of-immutability.aspx" target="_blank" rel="external">系列文章</a>。有兴趣的可以去那里看看。</p>
 <p>大牛们写文章确实完全不关心格式呀，代码都是黑白的，没有加亮看的相当费力啊！今天暂时把关于实现<a href="http://blogs.msdn.com/b/ericlippert/archive/2007/12/04/immutability-in-c-part-two-a-simple-immutable-stack.aspx" target="_blank" rel="external">Immutable Stack的文章</a>给搬过来。</p>
 <p>额，大牛是微软的…所以下面的代码是C#的。等我用java实现好了，保证没问题再贴上来吧。C++，VB，C#好像都已经自带Immutable的数据结构了。实现一遍也好呀，对functional programming的理解可能会深入一点吧…</p>
@@ -301,63 +124,21 @@
 <figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">IStack&lt;<span class="keyword">int</span>&gt; s1 = Stack&lt;<span class="keyword">int</span>&gt;.Empty;</div><div class="line">IStack&lt;<span class="keyword">int</span>&gt; s2 = s1.<span class="keyword">Push</span>(<span class="number">10</span>);</div><div class="line">IStack&lt;<span class="keyword">int</span>&gt; s3 = s2.<span class="keyword">Push</span>(<span class="number">20</span>);</div><div class="line">IStack&lt;<span class="keyword">int</span>&gt; s4 = s2.<span class="keyword">Push</span>(<span class="number">30</span>); <span class="comment">// shares its tail with s3.</span></div></pre></td></tr></table></figure>
 
 <p>Painless. Next time: a variant variation on this theme.</p>
-
-        
-
-      </div>
+]]></content>
+    <summary type="html">
+    <![CDATA[<h3 id="背景">背景</h3>
+<p>最近需要实现Immutable的数据结构，于是开始在网上找相关的资料，找到了一个微软大牛写的<a href="http://blogs.msdn.com/b/ericlippert/archive/2007/11/13/immutab]]>
+    </summary>
     
-
-    
-      <div class="post-footer">
-        
-
-        
-
-        
-          <div class="post-eof the-shape"></div>
-        
-      </div>
-    
-  </div>
-
-
+  </entry>
   
-    
-
-  <div class="post post-type-normal ">
-    <div class="post-header">
-
-      <div class="post-meta">
-          <span class="post-time">
-            
-              Posted on 2014-10-27
-            
-          </span>
-      </div>
-
-      
-      
-        <h1 class="post-title">
-          
-          
-            
-              <a class="post-title-link" href="/2014/10/27/random-thought/">
-                随想
-              </a>
-            
-          
-        </h1>
-      
-    </div>
-
-    
-      <div class="post-body">
-
-        
-        
-
-        
-          <p>今天在程序员论坛看到一个帖子，有网友在问如何根据一张图片买到图片中的衣服？</p>
+  <entry>
+    <title><![CDATA[随想]]></title>
+    <link href="http://blog.6path.com/2014/10/27/random-thought/"/>
+    <id>http://blog.6path.com/2014/10/27/random-thought/</id>
+    <published>2014-10-27T13:16:22.000Z</published>
+    <updated>2014-10-27T13:17:18.000Z</updated>
+    <content type="html"><![CDATA[<p>今天在程序员论坛看到一个帖子，有网友在问如何根据一张图片买到图片中的衣服？</p>
 <ul>
 <li><p>他首先尝试了google和baidu，没有找到购买的链接。</p>
 </li>
@@ -380,63 +161,26 @@
 <p>买家可以发布自己想要的东西的图片，描述和要求，卖家来根据图片和描述推荐自己的商品。既节省了买家的搜寻比较成本，又是卖家打开自己商品销路的好方法。</p>
 <p>对了，想法很好，就是缺个程序员哦！…</p>
 <p>ps：后来才发现，原来weibo上都有这种账号了 <a href="http://weibo.com/wolaizhao" target="_blank" rel="external">http://weibo.com/wolaizhao</a> ，提供人肉搜索服务！</p>
-
-        
-
-      </div>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>今天在程序员论坛看到一个帖子，有网友在问如何根据一张图片买到图片中的衣服？</p>
+<ul>
+<li><p>他首先尝试了google和baidu，没有找到购买的链接。</p>
+</li>
+<li><p>于是他又尝试了提取局部画面进行图片搜索，依然失败。</p>
+</li>
+]]>
+    </summary>
     
-
-    
-      <div class="post-footer">
-        
-
-        
-
-        
-          <div class="post-eof the-shape"></div>
-        
-      </div>
-    
-  </div>
-
-
+  </entry>
   
-    
-
-  <div class="post post-type-normal ">
-    <div class="post-header">
-
-      <div class="post-meta">
-          <span class="post-time">
-            
-              Posted on 2014-10-26
-            
-          </span>
-      </div>
-
-      
-      
-        <h1 class="post-title">
-          
-          
-            
-              <a class="post-title-link" href="/2014/10/26/awk-study-notes/">
-                awk学习笔记
-              </a>
-            
-          
-        </h1>
-      
-    </div>
-
-    
-      <div class="post-body">
-
-        
-        
-
-        
-          <p>其实也没怎么学，只是按照<a href="http://coolshell.cn/articles/9070.html" target="_blank" rel="external">AWK 简明教程</a>大致学习了下最基本的用法而已。</p>
+  <entry>
+    <title><![CDATA[awk学习笔记]]></title>
+    <link href="http://blog.6path.com/2014/10/26/awk-study-notes/"/>
+    <id>http://blog.6path.com/2014/10/26/awk-study-notes/</id>
+    <published>2014-10-26T15:10:54.000Z</published>
+    <updated>2014-10-26T15:12:30.000Z</updated>
+    <content type="html"><![CDATA[<p>其实也没怎么学，只是按照<a href="http://coolshell.cn/articles/9070.html" target="_blank" rel="external">AWK 简明教程</a>大致学习了下最基本的用法而已。</p>
 <p>文章里的例子都很好，就不一一列举了。</p>
 <h3 id="过滤，指定分隔符和输出">过滤，指定分隔符和输出</h3>
 <figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="title">awk</span>  -F: <span class="string">'<span class="variable">$1</span> ~ /root/ {print <span class="variable">$1</span>,<span class="variable">$3</span>,<span class="variable">$6</span>}'</span> OFS=<span class="string">"\t"</span> /etc/passwd</div></pre></td></tr></table></figure>
@@ -480,78 +224,128 @@
 <li>END {这里面放的是处理完所有的行后要执行的语句 }</li>
 <li>{这里面放的是处理每一行时要执行的语句}</li>
 </ul>
-
-        
-
-      </div>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>其实也没怎么学，只是按照<a href="http://coolshell.cn/articles/9070.html" target="_blank" rel="external">AWK 简明教程</a>大致学习了下最基本的用法而已。</p>
+<p>文章里的例子都很好，]]>
+    </summary>
     
-
+  </entry>
+  
+  <entry>
+    <title><![CDATA[折腾各种静态博客]]></title>
+    <link href="http://blog.6path.com/2014/10/26/play-static-blogging/"/>
+    <id>http://blog.6path.com/2014/10/26/play-static-blogging/</id>
+    <published>2014-10-26T03:57:56.000Z</published>
+    <updated>2014-10-26T03:59:14.000Z</updated>
+    <content type="html"><![CDATA[<h3 id="开始">开始</h3>
+<p>本来懒得折腾，用Tumblr来着。但Tumblr对Markdown的支持是在是太差了，而且主题折腾起来还是觉得不够自由，写了4篇文章后就受不了了。于是又开始了选择，对比，尝试。这个过程是那么的是曾相识！该用什么文本编辑器、哪个PIM软件最强大、学习什么语言好、学C看哪本书入门、用什么App看Twitter、买哪个VPS服务性价比最高…为了这些，不知浪费了多少天，看了多少评测文章，绝对是没完没了。到最后，都忘记了自己为什么要对比来着。</p>
+<p>但是…我还是开始折腾静态博客了！今天的问题是：该用哪个静态博客了？</p>
+<p>为了寻找答案，于是在网上开始到处看了，Octopress，Jekyll，Ghost，Hexo，Pelican…</p>
+<p>几乎按着顺序挨个尝试了一遍，各种未预料到的问题，终于这个博客用Hexo给搭起来了。完全不会node.js，Ruby啥的，我会乱说么…但就是爱看各种对比文章，各种推荐软文…这应该是病，得电击。</p>
+<p>对了，在这个过程中，我还测试了Markdown编辑器哦，Stackedit，Cmd Markdown，Mou，Macdown…</p>
+<h3 id="结束">结束</h3>
+<p>完了！今天本来是要做leetcode的题目来着，开博客目的是要记录leetcode的做题笔记来着…</p>
+<p>忘了吧…</p>
+<p>嗯，其实对现在的这个主题还不是很满意。我会回来的…</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<h3 id="开始">开始</h3>
+<p>本来懒得折腾，用Tumblr来着。但Tumblr对Markdown的支持是在是太差了，而且主题折腾起来还是觉得不够自由，写了4篇文章后就受不了了。于是又开始了选择，对比，尝试。这个过程是那么的是曾相识！该用什么文本编辑器、哪个PIM软]]>
+    </summary>
     
-      <div class="post-footer">
-        
+  </entry>
+  
+  <entry>
+    <title><![CDATA[用U盘修复GRUB2教程]]></title>
+    <link href="http://blog.6path.com/2014/10/26/use-thunmdrive-to-fix-grub2/"/>
+    <id>http://blog.6path.com/2014/10/26/use-thunmdrive-to-fix-grub2/</id>
+    <published>2014-10-26T03:51:41.000Z</published>
+    <updated>2014-10-26T03:52:38.000Z</updated>
+    <content type="html"><![CDATA[<p>不管你是调整分区大小，还是安装了新系统，也可能是没睡醒做了该剁手的事情，GRUB2经常会被破坏掉。</p>
+<p>今天这个事情就发生在了我身上…手抖的删掉了一个分区，然后直接点了重启。于是开机时卡在GRUB RESCURE了。</p>
+<p>下面就是重新安装GRUB的流程了。</p>
+<h3 id="挂载分区">挂载分区</h3>
+<p>挂载ubuntu安装的分区。可以用GParted或者Disk Utility来查看。通常是ext4格式的那个区。找到后就输入对应的命令了。比如ext4是对应<code>/dev/sda5</code>的，命令如下：</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">sudo</span> mount /dev/sda5 /mnt</div></pre></td></tr></table></figure>
 
-        
+<p>让GRUB检测下电脑里还有那些操作系统，比如Windows或者旧版的Linux：</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">sudo mount --<span class="keyword">bind</span> /dev /mnt/dev &&</div><div class="line">sudo mount --<span class="keyword">bind</span> /dev/pts /mnt/dev/pts &&</div><div class="line">sudo mount --<span class="keyword">bind</span> /<span class="keyword">proc</span> /mnt/<span class="keyword">proc</span> &&</div><div class="line">sudo mount --<span class="keyword">bind</span> /sys /mnt/sys</div></pre></td></tr></table></figure>
 
-        
-      </div>
+<h3 id="修复GRUB">修复GRUB</h3>
+<p>挂载操作完了，开始<code>chroot</code>到挂载点来更新吧：</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">sudo</span> chroot /mnt</div></pre></td></tr></table></figure>
+
+<p>开始安装，检查，更新GRUB吧。下面的命令就不用指定<code>sda5</code>了，直接<code>sda</code>就好：</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">grub-<span class="operator"><span class="keyword">install</span> /dev/sda</span></div><div class="line">grub-<span class="keyword">install</span> <span class="comment">--recheck /dev/sda</span></div><div class="line"><span class="keyword">update</span>-grub</div></pre></td></tr></table></figure>
+
+<p>成功的话，output里面会列出电脑里安装了的所有系统。</p>
+<h3 id="取消挂载">取消挂载</h3>
+<p>然后就是取消挂载了，是<code>umount</code>哦，不是unmount：</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">exit &&</div><div class="line">sudo umount /mnt/sys &&</div><div class="line">sudo umount /mnt/<span class="keyword">proc</span> &&</div><div class="line">sudo umount /mnt/dev/pts &&</div><div class="line">sudo umount /mnt/dev &&</div><div class="line">sudo umount /mnt</div></pre></td></tr></table></figure>
+
+<p>然后重启吧。再开机应该就是熟悉的启动画面了。</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>不管你是调整分区大小，还是安装了新系统，也可能是没睡醒做了该剁手的事情，GRUB2经常会被破坏掉。</p>
+<p>今天这个事情就发生在了我身上…手抖的删掉了一个分区，然后直接点了重启。于是开机时卡在GRUB RESCURE了。</p>
+<p>下面就是重新安装GRUB的流程了]]>
+    </summary>
     
-  </div>
-
-
+  </entry>
   
+  <entry>
+    <title><![CDATA[Hexo2.8切换主题会遇到的问题]]></title>
+    <link href="http://blog.6path.com/2014/10/26/Hexo-problem-when-changing-theme/"/>
+    <id>http://blog.6path.com/2014/10/26/Hexo-problem-when-changing-theme/</id>
+    <published>2014-10-26T02:28:20.000Z</published>
+    <updated>2014-10-26T02:44:18.000Z</updated>
+    <content type="html"><![CDATA[<h3 id="问题">问题</h3>
+<p>在_config.yml里面更改了主题名称后，运行<code>hexo generate</code>会看到如下错误：</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="attribute">message</span>: <span class="string">'Process failed: languages/de.yml',</span></div></pre></td></tr></table></figure>
 
-
-            
-              <div class="pagination">
-                <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">&raquo;</a>
-              </div>
-            
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div id="footer" class="footer">
-      <div class="footer-inner">
-        <div class="copyright">
+<h3 id="解决方法">解决方法</h3>
+<p>Github上有讨论：<a href="https://github.com/hexojs/hexo/issues/722" target="_blank" rel="external">https://github.com/hexojs/hexo/issues/722</a></p>
+<p>解决的方法很简单，就是要对第三方主题的languages文件夹下面的yml文件做出修改：<strong>value的值里面有空格的，需要都用双引号括住</strong>。</p>
+<p><img src="https://cloud.githubusercontent.com/assets/2100515/3622133/2b419004-0e29-11e4-8977-a663954d8986.png" alt=""></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<h3 id="问题">问题</h3>
+<p>在_config.yml里面更改了主题名称后，运行<code>hexo generate</code>会看到如下错误：</p>
+<figure class="highlight"><table><tr><td class="gutte]]>
+    </summary>
+    
+  </entry>
   
-  &copy; &nbsp; 
-  2015
-  <span class="with-love">&hearts;</span>
-  <span class="author">Chi</span>
-</div>
+  <entry>
+    <title><![CDATA[Hello World]]></title>
+    <link href="http://blog.6path.com/2014/10/26/hello-world/"/>
+    <id>http://blog.6path.com/2014/10/26/hello-world/</id>
+    <published>2014-10-25T16:59:34.000Z</published>
+    <updated>2014-10-25T16:59:34.000Z</updated>
+    <content type="html"><![CDATA[<p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">trobuleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
+<h2 id="Quick_Start">Quick Start</h2>
+<h3 id="Create_a_new_post">Create a new post</h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
 
-<div class="powered-by">
-  Powered By - <a class="theme-link" href="http://hexo.io">Hexo</a>
-</div>
+<p>More info: <a href="http://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
+<h3 id="Run_server">Run server</h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
 
-<div class="theme-info">
-  Theme - <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">NexT</a>
-</div>
+<p>More info: <a href="http://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
+<h3 id="Generate_static_files">Generate static files</h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
 
+<p>More info: <a href="http://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
+<h3 id="Deploy_to_remote_sites">Deploy to remote sites</h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
 
-
-
-
-      </div>
-    </div>
-
-  </div>
-
-  <script type="text/javascript" src="/vendors/jquery/dist/jquery.min.js"></script>
-
-
-  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js"></script>
-  <script type="text/javascript">
-    $(document).ready(function() {
-      $(".fancybox").fancybox();
-    });
-  </script>
-
-
-
-
-
+<p>More info: <a href="http://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io]]>
+    </summary>
+    
+  </entry>
   
-</body>
-</html>
+</feed>
