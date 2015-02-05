@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://blog.6path.com/"/>
-  <updated>2015-02-05T04:51:14.376Z</updated>
+  <updated>2015-02-05T04:57:03.838Z</updated>
   <id>http://blog.6path.com/</id>
   
   <author>
@@ -19,13 +19,13 @@
     <link href="http://blog.6path.com/2015/02/04/new-year-new-begin/"/>
     <id>http://blog.6path.com/2015/02/04/new-year-new-begin/</id>
     <published>2015-02-04T10:52:41.000Z</published>
-    <updated>2015-02-05T04:50:55.000Z</updated>
+    <updated>2015-02-05T04:57:00.000Z</updated>
     <content type="html"><![CDATA[<p>已经二月份了，我才开始写这个题。其实很正常，因为我好像什么事都是反应慢半拍。</p>
 <h3 id="去年">去年</h3>
 <ul>
 <li><p>学习了iOS开发。看完了<code>iOS Programming: The Big Nerd Ranch Guide</code>。这本书虽然有点旧了，但是内容还是讲的很清楚的。有大量的图片来描述程序运行时发生了什么，对了解底层的知识很有帮助。不足的是没有怎么介绍Storyboard的用法。对于个人开发来说，感觉还是Storyboard要方便很多，而且未来趋势应该也是Storyboard主导吧。<del>（这是我瞎说的）</del> 我自己反正全面转向Storyboard来做App了。</p>
 </li>
-<li><p>学习了Coursera的<code>Algorithms Part 1</code>和<code>Algorithms Part 2</code>。学了后才知道算法如果讲解的好，还是很吸引人的。本科时算法和数据结构的兴趣完全被老师给毁了。Part 2因为找工作了，就没有学那么仔细了，找时间还得再学一遍。学这门课的副产品是，因为assignment都得用Java，于是慢慢的学习了点Java。才发现Java其实没有那么的不堪，用起来还挺方便的。没深入学语言前，看过了太多的语言对比的文章和书，都不怎么支持Java作为入门语言。现在想来，看那些争论完全没有必要，应该选一个语言，然后硬着头皮扎进去学。没深入学语言，我就在看Joel Spolsky的<code>Joe on Software</code>和Paul Graham的<code>Hackers &amp; Painters</code>关于语言的讨论，我也是够蛋疼的。</p>
+<li><p>学习了Coursera的<code>Algorithms Part 1</code>和<code>Algorithms Part 2</code>。学了后才知道算法如果讲解的好，还是很吸引人的。本科时算法和数据结构的兴趣完全被老师给毁了。Part 2因为找工作了，就没有学那么仔细了，找时间还得再学一遍。学这门课的副产品是，因为assignment都得用Java，于是慢慢的学习了点Java。才发现Java其实没有那么的不堪，用起来还挺方便的。通过Java，还拿到了一个Developer的offer，即将要转型了。没深入学语言前，看过了太多的语言对比的文章和书，都不怎么支持Java作为入门语言。现在想来，看那些争论完全没有必要，应该选一个语言，然后硬着头皮扎进去学。没深入学语言，我就在看Joel Spolsky的<code>Joe on Software</code>和Paul Graham的<code>Hackers &amp; Painters</code>关于语言的讨论，我也是够蛋疼的。</p>
 </li>
 <li><p>学习了Bootstrap框架。学这个完全是因为接了个私活。以前了解过一点HTML/CSS/JavaScript，但是忘的差不多了，于是几乎现学现用，最后搭出来了个静态网站。因为被要求要支持所有设备，索性就直接找来Bootstrap用了。</p>
 </li>
