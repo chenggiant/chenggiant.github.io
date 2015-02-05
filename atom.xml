@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://blog.6path.com/"/>
-  <updated>2015-02-04T10:50:06.476Z</updated>
+  <updated>2015-02-05T04:45:38.236Z</updated>
   <id>http://blog.6path.com/</id>
   
   <author>
@@ -13,6 +13,82 @@
   </author>
   
   <generator uri="http://zespia.tw/hexo/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[新年，新的开始]]></title>
+    <link href="http://blog.6path.com/2015/02/04/new-year-new-begin/"/>
+    <id>http://blog.6path.com/2015/02/04/new-year-new-begin/</id>
+    <published>2015-02-04T10:52:41.000Z</published>
+    <updated>2015-02-05T04:45:22.000Z</updated>
+    <content type="html"><![CDATA[<p>已经二月份了，我才开始写这个题。其实很正常，因为我好像什么事都是反应慢半拍。</p>
+<h3 id="去年">去年</h3>
+<ul>
+<li><p>学习了iOS开发。看完了<code>iOS Programming: The Big Nerd Ranch Guide</code>。这本书虽然有点旧了，但是内容还是讲的很清楚的。有大量的图片来描述程序运行时发生了什么，对了解底层的知识很有帮助。不足的是没有怎么介绍Storyboard的用法。对于个人开发来说，感觉还是Storyboard要方便很多，而且未来趋势应该也是Storyboard主导吧。<del>（这是我瞎说的）</del> 我自己反正全面转向Storyboard来做App了。</p>
+</li>
+<li><p>学习了Coursera的<code>Algorithms Part 1</code>和<code>Algorithms Part 2</code>。学了后才知道算法如果讲解的好，还是很吸引人的。本科时算法和数据结构的兴趣完全被老师给毁了。Part 2因为找工作了，就没有学那么仔细了，找时间还得再学一遍。学这门课的副产品是，因为assignment都得用Java，于是慢慢的学习了点Java。才发现Java其实没有那么的不堪，用起来还挺方便的。没深入学语言前，看过了太多的语言对比的文章和书，都不怎么支持Java作为入门语言。现在想来，看那些争论完全没有必要，应该选一个语言，然后硬着头皮扎进去学。没深入学语言，我就在看Joel Spolsky的<code>Joe on Software</code>和Paul Graham的<code>Hackers &amp; Painters</code>关于语言的讨论，我也是够蛋疼的。</p>
+</li>
+<li><p>学习了Bootstrap框架。学这个完全是因为接了个私活。以前了解过一点HTML/CSS/JavaScript，但是忘的差不多了，于是几乎现学现用，最后搭出来了个静态网站。因为被要求要支持所有设备，索性就直接找来Bootstrap用了。</p>
+</li>
+<li><p>学习了PHP和MySQL。同样是找工作驱动的学习。PHP和MySQL在本科时有用来做过一个博客程序和基于Google Maps的地图服务。但是一晃就过去了4年了，于是复习的时候主要就是看了一遍<code>MySQL Crash Course</code>和Tutsplus的<code>PHP Fundamentals</code>。但是去面试的时候，仍然悲剧了。后来就没再接触PHP了，SQL的知识在iOS开发的时候还会用到一点。</p>
+</li>
+<li><p>学习一点点Bottle和Flask框架。当时想报Web Developer的职位，快速学习的话Django太重，就选了前面两个框架。用Bottle的时候，是在学着做一个简易Twitter，数据部分还用了Redis，算是了解了下NoSQL数据库吧。</p>
+</li>
+<li><p>刷Leetcode的题目。断断续续的刷了大半年，用C++做了一半的样子。后来为了准备面试，又换Java刷了40题，而且有的题目是重复的。</p>
+</li>
+</ul>
+<h4 id="本职工作">本职工作</h4>
+<p>其实本职工作是做Wireless Localization的，大部分时候都是和USRP，MATLAB打交道了。为了本职工作，也学了点以下的东西：</p>
+<ul>
+<li><p>C++</p>
+</li>
+<li><p>Bash</p>
+</li>
+<li><p>GNURadio</p>
+</li>
+<li><p>UHD API</p>
+</li>
+<li><p>Verilog</p>
+</li>
+</ul>
+<p>说到本职工作，就懒得详细的一点点的写了…</p>
+<h3 id="今年">今年</h3>
+<p>想看的书 (好多都是大部头，希望能看完几本吧)：</p>
+<ul>
+<li><p>Effective Java</p>
+</li>
+<li><p>Head First Design Pattern </p>
+</li>
+<li><p>Programming Pearls</p>
+</li>
+<li><p>Introduction to Algorithms</p>
+</li>
+<li><p>Code Complete</p>
+</li>
+<li><p>Advanced Programming in the UNIX Environment</p>
+</li>
+</ul>
+<p>目前想提升的技能：</p>
+<ul>
+<li><p>更深入了解和熟练使用Java，接触下Spring，Structs，Hibernate框架，熟悉各种Design Pattern。</p>
+</li>
+<li><p>iOS方面，可以看下iOS Drawing和Core Animation的书。</p>
+</li>
+<li><p>算法方面，要把Leetcode刷完，写好总结。</p>
+</li>
+<li><p>熟练SQL，要能写出复杂高效的query。</p>
+</li>
+<li><p>机器学习和数据分析，虽然离这个方向越来越远，其实还是很想精通这个的。 可以考虑学习Coursera的<a href="https://www.coursera.org/specialization/datamining/20?utm_medium=courseDescripTop" target="_blank" rel="external">Data Mining Specialization</a>。</p>
+</li>
+</ul>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>已经二月份了，我才开始写这个题。其实很正常，因为我好像什么事都是反应慢半拍。</p>
+<h3 id="去年">去年</h3>
+<ul>
+<li><p>学习了iOS开发。看完了<code>iOS Programming: The Big Nerd Ranch Guide</c]]>
+    </summary>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[编程笔记]]></title>
