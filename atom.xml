@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://blog.6path.com/"/>
-  <updated>2015-02-05T04:45:38.236Z</updated>
+  <updated>2015-02-05T04:51:14.376Z</updated>
   <id>http://blog.6path.com/</id>
   
   <author>
@@ -19,7 +19,7 @@
     <link href="http://blog.6path.com/2015/02/04/new-year-new-begin/"/>
     <id>http://blog.6path.com/2015/02/04/new-year-new-begin/</id>
     <published>2015-02-04T10:52:41.000Z</published>
-    <updated>2015-02-05T04:45:22.000Z</updated>
+    <updated>2015-02-05T04:50:55.000Z</updated>
     <content type="html"><![CDATA[<p>已经二月份了，我才开始写这个题。其实很正常，因为我好像什么事都是反应慢半拍。</p>
 <h3 id="去年">去年</h3>
 <ul>
@@ -72,6 +72,8 @@
 <li><p>更深入了解和熟练使用Java，接触下Spring，Structs，Hibernate框架，熟悉各种Design Pattern。</p>
 </li>
 <li><p>iOS方面，可以看下iOS Drawing和Core Animation的书。</p>
+</li>
+<li><p>HTML5，了解下ionic框架，未来的Mobile App很有可能就是HTML5主导了。</p>
 </li>
 <li><p>算法方面，要把Leetcode刷完，写好总结。</p>
 </li>
