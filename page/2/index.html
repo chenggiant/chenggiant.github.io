@@ -99,6 +99,85 @@
           
           
             
+              <a class="post-title-link" href="/2014/10/26/use-thunmdrive-to-fix-grub2/">
+                用U盘修复GRUB2教程
+              </a>
+            
+          
+        </h1>
+      
+    </div>
+
+    
+      <div class="post-body">
+
+        
+        
+
+        
+          <p>不管你是调整分区大小，还是安装了新系统，也可能是没睡醒做了该剁手的事情，GRUB2经常会被破坏掉。</p>
+<p>今天这个事情就发生在了我身上…手抖的删掉了一个分区，然后直接点了重启。于是开机时卡在GRUB RESCURE了。</p>
+<p>下面就是重新安装GRUB的流程了。</p>
+<h3 id="挂载分区">挂载分区</h3>
+<p>挂载ubuntu安装的分区。可以用GParted或者Disk Utility来查看。通常是ext4格式的那个区。找到后就输入对应的命令了。比如ext4是对应<code>/dev/sda5</code>的，命令如下：</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">sudo</span> mount /dev/sda5 /mnt</div></pre></td></tr></table></figure>
+
+<p>让GRUB检测下电脑里还有那些操作系统，比如Windows或者旧版的Linux：</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">sudo mount --<span class="keyword">bind</span> /dev /mnt/dev &&</div><div class="line">sudo mount --<span class="keyword">bind</span> /dev/pts /mnt/dev/pts &&</div><div class="line">sudo mount --<span class="keyword">bind</span> /<span class="keyword">proc</span> /mnt/<span class="keyword">proc</span> &&</div><div class="line">sudo mount --<span class="keyword">bind</span> /sys /mnt/sys</div></pre></td></tr></table></figure>
+
+<h3 id="修复GRUB">修复GRUB</h3>
+<p>挂载操作完了，开始<code>chroot</code>到挂载点来更新吧：</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">sudo</span> chroot /mnt</div></pre></td></tr></table></figure>
+
+<p>开始安装，检查，更新GRUB吧。下面的命令就不用指定<code>sda5</code>了，直接<code>sda</code>就好：</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">grub-<span class="operator"><span class="keyword">install</span> /dev/sda</span></div><div class="line">grub-<span class="keyword">install</span> <span class="comment">--recheck /dev/sda</span></div><div class="line"><span class="keyword">update</span>-grub</div></pre></td></tr></table></figure>
+
+<p>成功的话，output里面会列出电脑里安装了的所有系统。</p>
+<h3 id="取消挂载">取消挂载</h3>
+<p>然后就是取消挂载了，是<code>umount</code>哦，不是unmount：</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">exit &&</div><div class="line">sudo umount /mnt/sys &&</div><div class="line">sudo umount /mnt/<span class="keyword">proc</span> &&</div><div class="line">sudo umount /mnt/dev/pts &&</div><div class="line">sudo umount /mnt/dev &&</div><div class="line">sudo umount /mnt</div></pre></td></tr></table></figure>
+
+<p>然后重启吧。再开机应该就是熟悉的启动画面了。</p>
+
+        
+
+      </div>
+    
+
+    
+      <div class="post-footer">
+        
+
+        
+
+        
+          <div class="post-eof the-shape"></div>
+        
+      </div>
+    
+  </div>
+
+
+  
+    
+
+  <div class="post post-type-normal ">
+    <div class="post-header">
+
+      <div class="post-meta">
+          <span class="post-time">
+            
+              Posted on 2014-10-26
+            
+          </span>
+      </div>
+
+      
+      
+        <h1 class="post-title">
+          
+          
+            
               <a class="post-title-link" href="/2014/10/26/Hexo-problem-when-changing-theme/">
                 Hexo2.8切换主题会遇到的问题
               </a>
