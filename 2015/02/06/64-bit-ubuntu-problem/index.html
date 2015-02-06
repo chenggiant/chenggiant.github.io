@@ -112,7 +112,8 @@
         
 
         
-          <h3 id="How_to_build_USRP_FPGA_image_on_64-bit_Ubuntu_12-04_LTS_when_you_have_error_“libstdc++-so-6_not_found”?">How to build USRP FPGA image on 64-bit Ubuntu 12.04 LTS when you have error “libstdc++.so.6 not found”?</h3>
+          <p>Here are problems that are encounterd when using 64-bit Ubuntu system for USRP experiments.</p>
+<h4 id="How_to_build_USRP_FPGA_image_on_64-bit_Ubuntu_12-04_LTS_when_you_have_error_“libstdc++-so-6_not_found”?">How to build USRP FPGA image on 64-bit Ubuntu 12.04 LTS when you have error “libstdc++.so.6 not found”?</h4>
 <ul>
 <li>Install the following packages</li>
 </ul>
@@ -133,7 +134,7 @@
 </ul>
 <figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">cd</span> /<span class="keyword">opt</span>/Xilinx/<span class="number">13.4</span>/ISE_DS/common/lib/lin64/</div><div class="line">sudo mv libstdc++.<span class="keyword">so</span>.<span class="number">6</span> libstdc++.<span class="keyword">so</span>.<span class="number">6</span>.backup</div><div class="line">sudo <span class="keyword">ln</span> -<span class="keyword">s</span> /usr/lib/x86_64-linux-gnu/libstdc++.<span class="keyword">so</span>.<span class="number">6</span> libstdc++.<span class="keyword">so</span>.<span class="number">6</span></div></pre></td></tr></table></figure>
 
-<h3 id="How_to_enable_the_touchpad_on_Fujitsu_UH554_?">How to enable the touchpad on Fujitsu UH554 ?</h3>
+<h4 id="How_to_enable_the_touchpad_on_Fujitsu_UH554_?">How to enable the touchpad on Fujitsu UH554 ?</h4>
 <p>By changing the kernel boot parameters.</p>
 <ul>
 <li>Open the grub file</li>
@@ -150,7 +151,7 @@
 </ul>
 <figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">sudo</span> update-grub</div></pre></td></tr></table></figure>
 
-<h3 id="References">References</h3>
+<h4 id="References">References</h4>
 <ol>
 <li><a href="http://stackoverflow.com/questions/7412548/error-gnu-stubs-32-h-no-such-file-or-directory-while-compiling-nachos-source" target="_blank" rel="external">http://stackoverflow.com/questions/7412548/error-gnu-stubs-32-h-no-such-file-or-directory-while-compiling-nachos-source</a></li>
 <li><a href="https://bbs.archlinux.org/viewtopic.php?id=148115" target="_blank" rel="external">https://bbs.archlinux.org/viewtopic.php?id=148115</a></li>
