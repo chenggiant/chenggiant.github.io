@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://blog.6path.com/"/>
-  <updated>2015-04-06T13:31:41.137Z</updated>
+  <updated>2015-04-10T15:12:33.517Z</updated>
   <id>http://blog.6path.com/</id>
   
   <author>
@@ -13,6 +13,43 @@
   </author>
   
   <generator uri="http://zespia.tw/hexo/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[发布的第一个Mac App]]></title>
+    <link href="http://blog.6path.com/2015/04/10/first-mac-app/"/>
+    <id>http://blog.6path.com/2015/04/10/first-mac-app/</id>
+    <published>2015-04-10T15:09:48.000Z</published>
+    <updated>2015-04-10T15:12:14.000Z</updated>
+    <content type="html"><![CDATA[<h3 id="起因">起因</h3>
+<p>不知道大家有没有这样的经历：在Mac上面想看日历，大概查下某一天是星期几，然后顺手就去点击时间，发现只显示今天的日期（很多Windows用户都有这个习惯吧）。于是我每次都会顺手点开日期和时间设置，发现日历那一块的箭头根本就不能点…</p>
+<p><img src="http://i.imgur.com/cPMxpoU.png?1" alt=""></p>
+<h3 id="结果">结果</h3>
+<p>今天蛋疼的去搜了下有没有方便的应用，发现了这个叫<a href="http://shauninman.com/archive/2011/10/20/day_o_mac_menu_bar_clock" target="_blank" rel="external">Day-0</a>的，但是开发者说不会为Yosemite更新了，因为觉得Yosemite丑的令人发指…</p>
+<p>于是在Github上面搜有没有类似的开源的程序，找到了<a href="https://github.com/sdarlington/Calendar" target="_blank" rel="external">这个</a>在Notification Center里的小插件。但是这个只能用手势来看上一个月或者下一个月。</p>
+<p>最后我就使用了人生中的第一次fork了，在程序里加了两个按钮…大概长这样了：</p>
+<p><img src="http://i.imgur.com/W93dFZs.png?1" alt=""></p>
+<p>源代码在这，觉得有用的star一下…?</p>
+<p><a href="https://github.com/chenggiant/calendar-in-notification-center" target="_blank" rel="external">https://github.com/chenggiant/calendar-in-notification-center</a></p>
+<p>也可以直接<a href="https://www.dropbox.com/s/dtyxw1n7g6ei1uj/Calendar-Widget.zip" target="_blank" rel="external">从这下载</a>，然后双击Calendar.app运行。</p>
+<h3 id="Q&amp;A">Q&amp;A</h3>
+<ol>
+<li><p>为啥不直接打开系统自带Calendar?</p>
+<p>打开应用，界面太大太亮，视觉冲击力大的有点受不了。</p>
+</li>
+<li><p>为啥不用Dashboard里的Calendar?</p>
+<p>很有道理！但是我把Dashboard给完全关了…</p>
+</li>
+<li><p>为啥不用强大的Fantastical了?</p>
+<p>贵…贵…</p>
+</li>
+</ol>
+]]></content>
+    <summary type="html">
+    <![CDATA[<h3 id="起因">起因</h3>
+<p>不知道大家有没有这样的经历：在Mac上面想看日历，大概查下某一天是星期几，然后顺手就去点击时间，发现只显示今天的日期（很多Windows用户都有这个习惯吧）。于是我每次都会顺手点开日期和时间设置，发现日历那一块的箭头根本就不能点…</]]>
+    </summary>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[发布的第一个iOS App]]></title>
