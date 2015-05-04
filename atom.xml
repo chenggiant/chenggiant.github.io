@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://blog.6path.com/"/>
-  <updated>2015-04-10T15:12:33.517Z</updated>
+  <updated>2015-05-04T07:13:37.631Z</updated>
   <id>http://blog.6path.com/</id>
   
   <author>
@@ -13,6 +13,36 @@
   </author>
   
   <generator uri="http://zespia.tw/hexo/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[Step By Step Guide For Converting Trimble GPS Raw Data]]></title>
+    <link href="http://blog.6path.com/2015/05/04/step-by-step-guide-for-converting-gps-raw-data/"/>
+    <id>http://blog.6path.com/2015/05/04/step-by-step-guide-for-converting-gps-raw-data/</id>
+    <published>2015-05-04T06:58:03.000Z</published>
+    <updated>2015-05-04T07:12:54.000Z</updated>
+    <content type="html"><![CDATA[<p>This is a simple step by step guide for converting trimble gps raw data to coordinates data for further processing. We are using Trimble Total Control within Windows XP mode for the task.</p>
+<p>The pictures would explain themselves well. </p>
+<p><img src="http://i.imgur.com/OAOaI6d.png" alt="Imgur"></p>
+<p><img src="http://i.imgur.com/Rk9cwLM.png" alt="Imgur"></p>
+<p><img src="http://i.imgur.com/XibOjP9.png" alt="Imgur"></p>
+<p><img src="http://i.imgur.com/gHjIC2T.png" alt="Imgur"></p>
+<p><img src="http://i.imgur.com/SxmGkNL.png" alt="Imgur"></p>
+<p><img src="http://i.imgur.com/0WBtVIT.png" alt="Imgur"></p>
+<p><img src="http://i.imgur.com/dRB7baJ.png" alt="Imgur"></p>
+<p><img src="http://i.imgur.com/AXbNNqu.png" alt="Imgur"></p>
+<p><img src="http://i.imgur.com/Y3enFFS.png" alt="Imgur"></p>
+<p><img src="http://i.imgur.com/ExHXddM.png" alt="Imgur"></p>
+<p><img src="http://i.imgur.com/R8gj26H.png" alt="Imgur"></p>
+<p><img src="http://i.imgur.com/p5t4mC0.png" alt="Imgur"></p>
+<p><img src="http://i.imgur.com/FBNTM7k.png" alt="Imgur"></p>
+<p><img src="http://i.imgur.com/gfE0YP3.png" alt="Imgur"></p>
+<p><img src="http://i.imgur.com/8BuOZYX.png" alt="Imgur"></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>This is a simple step by step guide for converting trimble gps raw data to coordinates data for further processing. We are using Trimble ]]>
+    </summary>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[发布的第一个Mac App]]></title>
