@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://blog.6path.com/"/>
-  <updated>2015-05-15T02:52:46.822Z</updated>
+  <updated>2015-05-15T02:54:50.218Z</updated>
   <id>http://blog.6path.com/</id>
   
   <author>
@@ -19,10 +19,12 @@
     <link href="http://blog.6path.com/2015/05/04/step-by-step-guide-for-converting-gps-raw-data/"/>
     <id>http://blog.6path.com/2015/05/04/step-by-step-guide-for-converting-gps-raw-data/</id>
     <published>2015-05-04T06:58:03.000Z</published>
-    <updated>2015-05-04T07:12:54.000Z</updated>
+    <updated>2015-05-15T02:54:44.000Z</updated>
     <content type="html"><![CDATA[<p>This is a simple step by step guide for converting trimble gps raw data to coordinates data for further processing. We are using Trimble Total Control within Windows XP mode for the task.</p>
 <p>The pictures would explain themselves well. </p>
 <p><img src="http://i.imgur.com/OAOaI6d.png" alt="Imgur"></p>
+ <a id="more"></a>
+
 <p><img src="http://i.imgur.com/Rk9cwLM.png" alt="Imgur"></p>
 <p><img src="http://i.imgur.com/XibOjP9.png" alt="Imgur"></p>
 <p><img src="http://i.imgur.com/gHjIC2T.png" alt="Imgur"></p>
@@ -39,7 +41,11 @@
 <p><img src="http://i.imgur.com/8BuOZYX.png" alt="Imgur"></p>
 ]]></content>
     <summary type="html">
-    <![CDATA[<p>This is a simple step by step guide for converting trimble gps raw data to coordinates data for further processing. We are using Trimble ]]>
+    <![CDATA[<p>This is a simple step by step guide for converting trimble gps raw data to coordinates data for further processing. We are using Trimble Total Control within Windows XP mode for the task.</p>
+<p>The pictures would explain themselves well. </p>
+<p><img src="http://i.imgur.com/OAOaI6d.png" alt="Imgur"></p>
+ ]]>
+    
     </summary>
     
   </entry>
