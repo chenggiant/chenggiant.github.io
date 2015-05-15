@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://blog.6path.com/"/>
-  <updated>2015-05-15T02:56:42.200Z</updated>
+  <updated>2015-05-15T02:58:00.839Z</updated>
   <id>http://blog.6path.com/</id>
   
   <author>
@@ -55,19 +55,19 @@
     <link href="http://blog.6path.com/2015/04/10/first-mac-app/"/>
     <id>http://blog.6path.com/2015/04/10/first-mac-app/</id>
     <published>2015-04-10T15:09:48.000Z</published>
-    <updated>2015-05-15T02:56:18.000Z</updated>
+    <updated>2015-05-15T02:57:35.000Z</updated>
     <content type="html"><![CDATA[<h3 id="起因">起因</h3>
 <p>不知道大家有没有这样的经历：在Mac上面想看日历，大概查下某一天是星期几，然后顺手就去点击时间，发现只显示今天的日期（很多Windows用户都有这个习惯吧）。于是我每次都会顺手点开日期和时间设置，发现日历那一块的箭头根本就不能点…</p>
 <p><img src="http://i.imgur.com/cPMxpoU.png?1" alt=""></p>
 <h3 id="结果">结果</h3>
 <p>今天蛋疼的去搜了下有没有方便的应用，发现了这个叫<a href="http://shauninman.com/archive/2011/10/20/day_o_mac_menu_bar_clock" target="_blank" rel="external">Day-0</a>的，但是开发者说不会为Yosemite更新了，因为觉得Yosemite丑的令人发指…</p>
+ <a id="more"></a>
+
 <p>于是在Github上面搜有没有类似的开源的程序，找到了<a href="https://github.com/sdarlington/Calendar" target="_blank" rel="external">这个</a>在Notification Center里的小插件。但是这个只能用手势来看上一个月或者下一个月。</p>
 <p>最后我就使用了人生中的第一次fork了，在程序里加了两个按钮…大概长这样了：</p>
 <p><img src="http://i.imgur.com/W93dFZs.png?1" alt=""></p>
 <p>源代码在这，觉得有用的star一下…?</p>
 <p><a href="https://github.com/chenggiant/calendar-in-notification-center" target="_blank" rel="external">https://github.com/chenggiant/calendar-in-notification-center</a></p>
- <a id="more"></a>
-
 <p>也可以直接<a href="https://www.dropbox.com/s/dtyxw1n7g6ei1uj/Calendar-Widget.zip" target="_blank" rel="external">从这下载</a>，然后双击Calendar.app运行。</p>
 <h3 id="Q&amp;A">Q&amp;A</h3>
 <ol>
@@ -88,11 +88,6 @@
 <p><img src="http://i.imgur.com/cPMxpoU.png?1" alt=""></p>
 <h3 id="结果">结果</h3>
 <p>今天蛋疼的去搜了下有没有方便的应用，发现了这个叫<a href="http://shauninman.com/archive/2011/10/20/day_o_mac_menu_bar_clock" target="_blank" rel="external">Day-0</a>的，但是开发者说不会为Yosemite更新了，因为觉得Yosemite丑的令人发指…</p>
-<p>于是在Github上面搜有没有类似的开源的程序，找到了<a href="https://github.com/sdarlington/Calendar" target="_blank" rel="external">这个</a>在Notification Center里的小插件。但是这个只能用手势来看上一个月或者下一个月。</p>
-<p>最后我就使用了人生中的第一次fork了，在程序里加了两个按钮…大概长这样了：</p>
-<p><img src="http://i.imgur.com/W93dFZs.png?1" alt=""></p>
-<p>源代码在这，觉得有用的star一下…?</p>
-<p><a href="https://github.com/chenggiant/calendar-in-notification-center" target="_blank" rel="external">https://github.com/chenggiant/calendar-in-notification-center</a></p>
  ]]>
     
     </summary>
@@ -206,13 +201,14 @@
     <link href="http://blog.6path.com/2015/02/04/new-year-new-begin/"/>
     <id>http://blog.6path.com/2015/02/04/new-year-new-begin/</id>
     <published>2015-02-04T10:52:41.000Z</published>
-    <updated>2015-05-15T02:55:53.000Z</updated>
+    <updated>2015-05-15T02:57:56.000Z</updated>
     <content type="html"><![CDATA[<p>已经二月份了，我才开始写这个题。其实很正常，因为我好像什么事都是反应慢半拍。</p>
 <h3 id="去年">去年</h3>
 <ul>
 <li><p>学习了iOS开发。看完了<code>iOS Programming: The Big Nerd Ranch Guide</code>。这本书虽然有点旧了，但是内容还是讲的很清楚的。有大量的图片来描述程序运行时发生了什么，对了解底层的知识很有帮助。不足的是没有怎么介绍Storyboard的用法。对于个人开发来说，感觉还是Storyboard要方便很多，而且未来趋势应该也是Storyboard主导吧。<del>（这是我瞎说的）</del> 我自己反正全面转向Storyboard来做App了。</p>
 </li>
 <li><p>学习了Coursera的<code>Algorithms Part 1</code>和<code>Algorithms Part 2</code>。学了后才知道算法如果讲解的好，还是很吸引人的。本科时算法和数据结构的兴趣完全被老师给毁了。Part 2因为找工作了，就没有学那么仔细了，找时间还得再学一遍。学这门课的副产品是，因为assignment都得用Java，于是慢慢的学习了点Java。才发现Java其实没有那么的不堪，用起来还挺方便的。通过Java，还拿到了一个Developer的offer，即将要转型了。没深入学语言前，看过了太多的语言对比的文章和书，都不怎么支持Java作为入门语言。现在想来，看那些争论完全没有必要，应该选一个语言，然后硬着头皮扎进去学。没深入学语言，我就在看Joel Spolsky的<code>Joe on Software</code>和Paul Graham的<code>Hackers &amp; Painters</code>关于语言的讨论，我也是够蛋疼的。</p>
+<a id="more"></a>
 </li>
 <li><p>学习了Bootstrap框架。学这个完全是因为接了个私活。以前了解过一点HTML/CSS/JavaScript，但是忘的差不多了，于是几乎现学现用，最后搭出来了个静态网站。因为被要求要支持所有设备，索性就直接找来Bootstrap用了。</p>
 </li>
@@ -221,8 +217,6 @@
 <li><p>学习一点点Bottle和Flask框架。当时想报Web Developer的职位，快速学习的话Django太重，就选了前面两个框架。用Bottle的时候，是在学着做一个简易Twitter，数据部分还用了Redis，算是了解了下NoSQL数据库吧。</p>
 </li>
 <li><p>刷Leetcode的题目。断断续续的刷了大半年，用C++做了一半的样子。后来为了准备面试，又换Java刷了40题，而且有的题目是重复的。</p>
-<a id="more"></a>
-
 </li>
 </ul>
 <h4 id="本职工作">本职工作</h4>
@@ -279,14 +273,6 @@
 <li><p>学习了iOS开发。看完了<code>iOS Programming: The Big Nerd Ranch Guide</code>。这本书虽然有点旧了，但是内容还是讲的很清楚的。有大量的图片来描述程序运行时发生了什么，对了解底层的知识很有帮助。不足的是没有怎么介绍Storyboard的用法。对于个人开发来说，感觉还是Storyboard要方便很多，而且未来趋势应该也是Storyboard主导吧。<del>（这是我瞎说的）</del> 我自己反正全面转向Storyboard来做App了。</p>
 </li>
 <li><p>学习了Coursera的<code>Algorithms Part 1</code>和<code>Algorithms Part 2</code>。学了后才知道算法如果讲解的好，还是很吸引人的。本科时算法和数据结构的兴趣完全被老师给毁了。Part 2因为找工作了，就没有学那么仔细了，找时间还得再学一遍。学这门课的副产品是，因为assignment都得用Java，于是慢慢的学习了点Java。才发现Java其实没有那么的不堪，用起来还挺方便的。通过Java，还拿到了一个Developer的offer，即将要转型了。没深入学语言前，看过了太多的语言对比的文章和书，都不怎么支持Java作为入门语言。现在想来，看那些争论完全没有必要，应该选一个语言，然后硬着头皮扎进去学。没深入学语言，我就在看Joel Spolsky的<code>Joe on Software</code>和Paul Graham的<code>Hackers &amp; Painters</code>关于语言的讨论，我也是够蛋疼的。</p>
-</li>
-<li><p>学习了Bootstrap框架。学这个完全是因为接了个私活。以前了解过一点HTML/CSS/JavaScript，但是忘的差不多了，于是几乎现学现用，最后搭出来了个静态网站。因为被要求要支持所有设备，索性就直接找来Bootstrap用了。</p>
-</li>
-<li><p>学习了PHP和MySQL。同样是找工作驱动的学习。PHP和MySQL在本科时有用来做过一个博客程序和基于Google Maps的地图服务。但是一晃就过去了4年了，于是复习的时候主要就是看了一遍<code>MySQL Crash Course</code>和Tutsplus的<code>PHP Fundamentals</code>。但是去面试的时候，仍然悲剧了。后来就没再接触PHP了，SQL的知识在iOS开发的时候还会用到一点。</p>
-</li>
-<li><p>学习一点点Bottle和Flask框架。当时想报Web Developer的职位，快速学习的话Django太重，就选了前面两个框架。用Bottle的时候，是在学着做一个简易Twitter，数据部分还用了Redis，算是了解了下NoSQL数据库吧。</p>
-</li>
-<li><p>刷Leetcode的题目。断断续续的刷了大半年，用C++做了一半的样子。后来为了准备面试，又换Java刷了40题，而且有的题目是重复的。</p>
 ]]>
     
     </summary>
