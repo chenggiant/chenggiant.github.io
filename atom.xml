@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://blog.6path.com/"/>
-  <updated>2015-05-04T07:13:37.631Z</updated>
+  <updated>2015-05-15T02:28:29.512Z</updated>
   <id>http://blog.6path.com/</id>
   
   <author>
@@ -273,7 +273,7 @@
     <link href="http://blog.6path.com/2014/11/24/installation-guide-for-gnuradio-uhd/"/>
     <id>http://blog.6path.com/2014/11/24/installation-guide-for-gnuradio-uhd/</id>
     <published>2014-11-24T13:19:43.000Z</published>
-    <updated>2014-11-24T13:53:26.000Z</updated>
+    <updated>2015-05-12T08:51:09.000Z</updated>
     <content type="html"><![CDATA[<h3 id="Install_Ubuntu_12-04_LTS:">Install Ubuntu 12.04 LTS:</h3>
 <ol>
 <li><p>Make a liveUSB with software like <a href="http://rufus.akeo.ie/" target="_blank" rel="external">Rufus</a>, need to download Ubuntu image first.</p>
