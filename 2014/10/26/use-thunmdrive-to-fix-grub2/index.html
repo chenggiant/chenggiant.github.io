@@ -145,6 +145,8 @@
 <p>让GRUB检测下电脑里还有那些操作系统，比如Windows或者旧版的Linux：</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">sudo mount --<span class="keyword">bind</span> /dev /mnt/dev &&</div><div class="line">sudo mount --<span class="keyword">bind</span> /dev/pts /mnt/dev/pts &&</div><div class="line">sudo mount --<span class="keyword">bind</span> /<span class="keyword">proc</span> /mnt/<span class="keyword">proc</span> &&</div><div class="line">sudo mount --<span class="keyword">bind</span> /sys /mnt/sys</div></pre></td></tr></table></figure>
 
+ <a id="more"></a>
+
 <h3 id="修复GRUB">修复GRUB</h3>
 <p>挂载操作完了，开始<code>chroot</code>到挂载点来更新吧：</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">sudo</span> chroot /mnt</div></pre></td></tr></table></figure>

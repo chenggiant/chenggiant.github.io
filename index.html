@@ -223,20 +223,12 @@
 <p><img src="http://i.imgur.com/W93dFZs.png?1" alt=""></p>
 <p>源代码在这，觉得有用的star一下…?</p>
 <p><a href="https://github.com/chenggiant/calendar-in-notification-center" target="_blank" rel="external">https://github.com/chenggiant/calendar-in-notification-center</a></p>
-<p>也可以直接<a href="https://www.dropbox.com/s/dtyxw1n7g6ei1uj/Calendar-Widget.zip" target="_blank" rel="external">从这下载</a>，然后双击Calendar.app运行。</p>
-<h3 id="Q&amp;A">Q&amp;A</h3>
-<ol>
-<li><p>为啥不直接打开系统自带Calendar?</p>
-<p>打开应用，界面太大太亮，视觉冲击力大的有点受不了。</p>
-</li>
-<li><p>为啥不用Dashboard里的Calendar?</p>
-<p>很有道理！但是我把Dashboard给完全关了…</p>
-</li>
-<li><p>为啥不用强大的Fantastical了?</p>
-<p>贵…贵…</p>
-</li>
-</ol>
-
+ 
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2015/04/10/first-mac-app/#more">
+              Read more &raquo;
+            </a>
+          </div>
         
       
     </div>
@@ -306,12 +298,12 @@
 <p>下载链接：<br><a href="https://itunes.apple.com/us/app/72-hours-simple-goal-management/id979550443" target="_blank" rel="external">https://itunes.apple.com/us/app/72-hours-simple-goal-management/id979550443</a></p>
 <h3 id="起步">起步</h3>
 <p>为了逼自己学习，有一天起床后，就直接买了个苹果开发者账号。起步完全是靠<code>iOS Programming(4th Edition)</code>了。边看书，边照着把代码都打了一遍。书里面的好多原理部分还没弄懂，找机会得重看一遍。</p>
-<h3 id="动手">动手</h3>
-<p>看完书后，就不知天高地厚的觉得入门了…于是动手开始做这个简洁的目标管理App了。因为书里面数据处理用的是core data，然后界面大部分都是用的xib，所以动手的时候也是那么做的。后来，数据变复杂了，就不知道如何用core data处理了…因为确实没太弄明白博大精深的core data。最后，完全放弃了core data，直接用FMDB和sqlite来处理数据了，界面方面也全部用storyboard弄了。从那开始，进度就快了很多。但是每周最多只抽出6个小时来弄，慢慢的就过了4个月了。过程中还是学到了很多的，每每掉到坑里，总是可以求助Stack Overflow爬出来。</p>
-<h3 id="结束">结束</h3>
-<p>最后，谢谢V2EX的各位大神。每天在这逛，心里总是痒痒的想做点啥…现在又开始学习Web开发了，发现有太多的东西要学了！MongoDB，Express，Ember，Node…已经忙不过来了。</p>
-<p>MongoDB官网的课程还不错，有人在学么？<br><a href="https://university.mongodb.com/courses/catalog" target="_blank" rel="external">https://university.mongodb.com/courses/catalog</a></p>
-
+ 
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2015/04/06/first-ios-app/#more">
+              Read more &raquo;
+            </a>
+          </div>
         
       
     </div>
@@ -388,39 +380,12 @@
 </ul>
 <figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="reserved">export</span> LIBRARY_PATH=<span class="regexp">/usr/lib/</span>$(gcc -<span class="built_in">print</span>-multiarch)</div><div class="line"><span class="reserved">export</span> C_INCLUDE_PATH=<span class="regexp">/usr/include/</span>$(gcc -<span class="built_in">print</span>-multiarch)</div><div class="line"><span class="reserved">export</span> CPLUS_INCLUDE_PATH=<span class="regexp">/usr/include/</span>$(gcc -<span class="built_in">print</span>-multiarch)</div></pre></td></tr></table></figure>
 
-<ul>
-<li>(Optional) Check whether you have the correct version of GLIBCXX_x.x.x</li>
-</ul>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">strings <span class="regexp">/usr/</span>lib<span class="regexp">/x86_64-linux-gnu/</span>libstdc++.so.<span class="number">6</span> | <span class="keyword">grep</span> GLIBC</div></pre></td></tr></table></figure>
-
-<ul>
-<li>Replace the ISE’s libstdc with the 64 bit version of Ubuntu</li>
-</ul>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">cd</span> /<span class="keyword">opt</span>/Xilinx/<span class="number">13.4</span>/ISE_DS/common/lib/lin64/</div><div class="line">sudo mv libstdc++.<span class="keyword">so</span>.<span class="number">6</span> libstdc++.<span class="keyword">so</span>.<span class="number">6</span>.backup</div><div class="line">sudo <span class="keyword">ln</span> -<span class="keyword">s</span> /usr/lib/x86_64-linux-gnu/libstdc++.<span class="keyword">so</span>.<span class="number">6</span> libstdc++.<span class="keyword">so</span>.<span class="number">6</span></div></pre></td></tr></table></figure>
-
-<p><strong>2. How to enable the touchpad on Fujitsu UH554 ?</strong></p>
-<p>By changing the kernel boot parameters.</p>
-<ul>
-<li>Open the grub file</li>
-</ul>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="title">sudo</span> gedit /etc/<span class="default"><span class="keyword">default</span>/grub</span></div></pre></td></tr></table></figure>
-
-<ul>
-<li>Add the following line at the end of “quiet splash”</li>
-</ul>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">i8042.notimeout i8042.nomux</div></pre></td></tr></table></figure>
-
-<ul>
-<li>update grub file and restart</li>
-</ul>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">sudo</span> update-grub</div></pre></td></tr></table></figure>
-
-<h4 id="References">References</h4>
-<ol>
-<li><a href="http://stackoverflow.com/questions/7412548/error-gnu-stubs-32-h-no-such-file-or-directory-while-compiling-nachos-source" target="_blank" rel="external">http://stackoverflow.com/questions/7412548/error-gnu-stubs-32-h-no-such-file-or-directory-while-compiling-nachos-source</a></li>
-<li><a href="https://bbs.archlinux.org/viewtopic.php?id=148115" target="_blank" rel="external">https://bbs.archlinux.org/viewtopic.php?id=148115</a></li>
-</ol>
-
+<p> 
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2015/02/06/64-bit-ubuntu-problem/#more">
+              Read more &raquo;
+            </a>
+          </div>
         
       
     </div>
@@ -499,55 +464,12 @@
 <li><p>学习一点点Bottle和Flask框架。当时想报Web Developer的职位，快速学习的话Django太重，就选了前面两个框架。用Bottle的时候，是在学着做一个简易Twitter，数据部分还用了Redis，算是了解了下NoSQL数据库吧。</p>
 </li>
 <li><p>刷Leetcode的题目。断断续续的刷了大半年，用C++做了一半的样子。后来为了准备面试，又换Java刷了40题，而且有的题目是重复的。</p>
-</li>
-</ul>
-<h4 id="本职工作">本职工作</h4>
-<p>其实本职工作是做Wireless Localization的，大部分时候都是和USRP，MATLAB打交道了。为了本职工作，也学了点以下的东西：</p>
-<ul>
-<li><p>C++</p>
-</li>
-<li><p>Bash</p>
-</li>
-<li><p>GNURadio</p>
-</li>
-<li><p>UHD API</p>
-</li>
-<li><p>Verilog</p>
-</li>
-</ul>
-<p>说到本职工作，就懒得详细的一点点的写了…</p>
-<h3 id="今年">今年</h3>
-<p>想看的书 (好多都是大部头，希望能看完几本吧)：</p>
-<ul>
-<li><p>Effective Java</p>
-</li>
-<li><p>Head First Design Pattern </p>
-</li>
-<li><p>Programming Pearls</p>
-</li>
-<li><p>Introduction to Algorithms</p>
-</li>
-<li><p>Code Complete</p>
-</li>
-<li><p>Advanced Programming in the UNIX Environment</p>
-</li>
-</ul>
-<p>目前想提升的技能：</p>
-<ul>
-<li><p>更深入了解和熟练使用Java，接触下Spring，Structs，Hibernate框架，熟悉各种Design Pattern。</p>
-</li>
-<li><p>iOS方面，可以看下iOS Drawing和Core Animation的书。</p>
-</li>
-<li><p>HTML5，了解下ionic框架，未来的Mobile App很有可能就是HTML5主导了。</p>
-</li>
-<li><p>算法方面，要把Leetcode刷完，写好总结。</p>
-</li>
-<li><p>熟练SQL，要能写出复杂高效的query。</p>
-</li>
-<li><p>机器学习和数据分析，虽然离这个方向越来越远，其实还是很想精通这个的。 可以考虑学习Coursera的<a href="https://www.coursera.org/specialization/datamining/20?utm_medium=courseDescripTop" target="_blank" rel="external">Data Mining Specialization</a>。</p>
-</li>
-</ul>
 
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2015/02/04/new-year-new-begin/#more">
+              Read more &raquo;
+            </a>
+          </div>
         
       
     </div>
@@ -701,13 +623,12 @@
 <h3 id="纠结">纠结</h3>
 <p>其实主要的纠结就是<code>int a</code>和<code>int b</code>相乘，结果会overflow。于是就想着把相乘的结果cast到double，然后和2147483647比大小判定。</p>
 <p>然后就囧了，不知道当时怎么整的！怎么test结果都不对…其实就是这么一行code…<code>double c = (double)a * b</code></p>
-<h3 id="总结">总结</h3>
-<p>现在想来真丢脸啊，还是不应该没睡醒就做题啊…以后要记住了</p>
-<blockquote>
-<p>int_32和int_32相乘，还是int_32，丢掉了前面的32个比特！要解决这个问题，cast其中一个int_32到一个64位的数就可以了…gcc会自动的达到我们想要的32*32-&gt;64！</p>
-</blockquote>
-<p>你们知道前面那个纠结我纠结了多久么？50分钟…答案提交后我5分钟就找到答案了，我真的太容易不淡定了！</p>
-
+ 
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2014/12/11/progamming-notes/#more">
+              Read more &raquo;
+            </a>
+          </div>
         
       
     </div>
@@ -792,25 +713,12 @@
 <h4 id="Modify_the_source_by_changing_the_source_list:">Modify the source by changing the source list:</h4>
 <figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo gedit /etc/apt/<span class="keyword">source</span>.<span class="keyword">list</span></div></pre></td></tr></table></figure>
 
-<p>Then, copy the following to the top of the list (this will choose the best server for downloading software):</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="title">deb</span> <span class="url">mirror://mirrors.ubuntu.com/mirrors.txt</span> precise main restricted universe multiverse</div><div class="line">deb <span class="url">mirror://mirrors.ubuntu.com/mirrors.txt</span> precise-updates main restricted universe multiverse</div><div class="line">deb <span class="url">mirror://mirrors.ubuntu.com/mirrors.txt</span> precise-backports main restricted universe multiverse</div><div class="line">deb <span class="url">mirror://mirrors.ubuntu.com/mirrors.txt</span> precise-security main restricted universe multiverse</div></pre></td></tr></table></figure>
-
-<p>At last, update the list: </p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo apt-<span class="built_in">get</span> <span class="keyword">update</span></div></pre></td></tr></table></figure>
-
-<h4 id="Download_and_run_script_to_install_GNURadio">Download and run script to install GNURadio</h4>
-<p>Install all the required dependencies</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">sudo apt-<span class="built_in">get</span> -<span class="keyword">y</span> install git-core autoconf automake  libtool <span class="keyword">g</span>++ <span class="keyword">python</span>-dev swig \</div><div class="line">pkg-config libboost1.<span class="number">48</span>-<span class="keyword">all</span>-dev libfftw3-dev libcppunit-dev libgsl0-dev \</div><div class="line">libusb-dev sdcc libsdl1.<span class="number">2</span>-dev <span class="keyword">python</span>-wxgtk2.<span class="number">8</span> <span class="keyword">python</span>-numpy \</div><div class="line"><span class="keyword">python</span>-cheetah <span class="keyword">python</span>-lxml doxygen <span class="keyword">python</span>-qt4 <span class="keyword">python</span>-qwt5-qt4 libxi-dev \</div><div class="line">libqt4-opengl-dev libqwt5-qt4-dev libfontconfig1-dev libxrender-dev</div></pre></td></tr></table></figure>
-
-<p>use the <code>-o</code> option to download the stable version of GNURadio</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">wget <span class="keyword">http</span>://www.sbrac.org/<span class="built_in">files</span>/build-gnuradio && chmod <span class="operator">a</span>+x ./build-gnuradio && ./build-gnuradio -o</div></pre></td></tr></table></figure>
-
-<p><em>For other version of Ubuntu systems, check this <a href="http://gnuradio.org/redmine/projects/gnuradio/wiki/UbuntuInstall#Install-Dependencies" target="_blank" rel="external">GNURadio page</a> for more information.</em></p>
-<h3 id="Optional">Optional</h3>
-<h4 id="Install_NTP">Install NTP</h4>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">sudo</span> apt-get install ntp</div></pre></td></tr></table></figure>
-
-
+ 
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2014/11/24/installation-guide-for-gnuradio-uhd/#more">
+              Read more &raquo;
+            </a>
+          </div>
         
       
     </div>

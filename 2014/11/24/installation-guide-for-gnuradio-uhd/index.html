@@ -155,6 +155,8 @@
 <h4 id="Modify_the_source_by_changing_the_source_list:">Modify the source by changing the source list:</h4>
 <figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo gedit /etc/apt/<span class="keyword">source</span>.<span class="keyword">list</span></div></pre></td></tr></table></figure>
 
+ <a id="more"></a>
+
 <p>Then, copy the following to the top of the list (this will choose the best server for downloading software):</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="title">deb</span> <span class="url">mirror://mirrors.ubuntu.com/mirrors.txt</span> precise main restricted universe multiverse</div><div class="line">deb <span class="url">mirror://mirrors.ubuntu.com/mirrors.txt</span> precise-updates main restricted universe multiverse</div><div class="line">deb <span class="url">mirror://mirrors.ubuntu.com/mirrors.txt</span> precise-backports main restricted universe multiverse</div><div class="line">deb <span class="url">mirror://mirrors.ubuntu.com/mirrors.txt</span> precise-security main restricted universe multiverse</div></pre></td></tr></table></figure>
 

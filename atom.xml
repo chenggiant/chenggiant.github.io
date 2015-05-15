@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://blog.6path.com/"/>
-  <updated>2015-05-15T02:54:50.218Z</updated>
+  <updated>2015-05-15T02:56:42.200Z</updated>
   <id>http://blog.6path.com/</id>
   
   <author>
@@ -55,7 +55,7 @@
     <link href="http://blog.6path.com/2015/04/10/first-mac-app/"/>
     <id>http://blog.6path.com/2015/04/10/first-mac-app/</id>
     <published>2015-04-10T15:09:48.000Z</published>
-    <updated>2015-04-10T15:12:14.000Z</updated>
+    <updated>2015-05-15T02:56:18.000Z</updated>
     <content type="html"><![CDATA[<h3 id="起因">起因</h3>
 <p>不知道大家有没有这样的经历：在Mac上面想看日历，大概查下某一天是星期几，然后顺手就去点击时间，发现只显示今天的日期（很多Windows用户都有这个习惯吧）。于是我每次都会顺手点开日期和时间设置，发现日历那一块的箭头根本就不能点…</p>
 <p><img src="http://i.imgur.com/cPMxpoU.png?1" alt=""></p>
@@ -66,6 +66,8 @@
 <p><img src="http://i.imgur.com/W93dFZs.png?1" alt=""></p>
 <p>源代码在这，觉得有用的star一下…?</p>
 <p><a href="https://github.com/chenggiant/calendar-in-notification-center" target="_blank" rel="external">https://github.com/chenggiant/calendar-in-notification-center</a></p>
+ <a id="more"></a>
+
 <p>也可以直接<a href="https://www.dropbox.com/s/dtyxw1n7g6ei1uj/Calendar-Widget.zip" target="_blank" rel="external">从这下载</a>，然后双击Calendar.app运行。</p>
 <h3 id="Q&amp;A">Q&amp;A</h3>
 <ol>
@@ -82,7 +84,17 @@
 ]]></content>
     <summary type="html">
     <![CDATA[<h3 id="起因">起因</h3>
-<p>不知道大家有没有这样的经历：在Mac上面想看日历，大概查下某一天是星期几，然后顺手就去点击时间，发现只显示今天的日期（很多Windows用户都有这个习惯吧）。于是我每次都会顺手点开日期和时间设置，发现日历那一块的箭头根本就不能点…</]]>
+<p>不知道大家有没有这样的经历：在Mac上面想看日历，大概查下某一天是星期几，然后顺手就去点击时间，发现只显示今天的日期（很多Windows用户都有这个习惯吧）。于是我每次都会顺手点开日期和时间设置，发现日历那一块的箭头根本就不能点…</p>
+<p><img src="http://i.imgur.com/cPMxpoU.png?1" alt=""></p>
+<h3 id="结果">结果</h3>
+<p>今天蛋疼的去搜了下有没有方便的应用，发现了这个叫<a href="http://shauninman.com/archive/2011/10/20/day_o_mac_menu_bar_clock" target="_blank" rel="external">Day-0</a>的，但是开发者说不会为Yosemite更新了，因为觉得Yosemite丑的令人发指…</p>
+<p>于是在Github上面搜有没有类似的开源的程序，找到了<a href="https://github.com/sdarlington/Calendar" target="_blank" rel="external">这个</a>在Notification Center里的小插件。但是这个只能用手势来看上一个月或者下一个月。</p>
+<p>最后我就使用了人生中的第一次fork了，在程序里加了两个按钮…大概长这样了：</p>
+<p><img src="http://i.imgur.com/W93dFZs.png?1" alt=""></p>
+<p>源代码在这，觉得有用的star一下…?</p>
+<p><a href="https://github.com/chenggiant/calendar-in-notification-center" target="_blank" rel="external">https://github.com/chenggiant/calendar-in-notification-center</a></p>
+ ]]>
+    
     </summary>
     
   </entry>
@@ -92,12 +104,14 @@
     <link href="http://blog.6path.com/2015/04/06/first-ios-app/"/>
     <id>http://blog.6path.com/2015/04/06/first-ios-app/</id>
     <published>2015-04-06T13:29:13.000Z</published>
-    <updated>2015-04-06T13:31:03.000Z</updated>
+    <updated>2015-05-15T02:56:22.000Z</updated>
     <content type="html"><![CDATA[<h3 id="介绍">介绍</h3>
 <p>源代码就放在Github了，里面还有关于App更详细的介绍。因为大都用的原生控件，所以比较适合初学者参考吧。(App里还用到了特别国产的小红点UI元素…)<br><a href="https://github.com/chenggiant/72-Hours" target="_blank" rel="external">https://github.com/chenggiant/72-Hours</a></p>
 <p>下载链接：<br><a href="https://itunes.apple.com/us/app/72-hours-simple-goal-management/id979550443" target="_blank" rel="external">https://itunes.apple.com/us/app/72-hours-simple-goal-management/id979550443</a></p>
 <h3 id="起步">起步</h3>
 <p>为了逼自己学习，有一天起床后，就直接买了个苹果开发者账号。起步完全是靠<code>iOS Programming(4th Edition)</code>了。边看书，边照着把代码都打了一遍。书里面的好多原理部分还没弄懂，找机会得重看一遍。</p>
+ <a id="more"></a>
+
 <h3 id="动手">动手</h3>
 <p>看完书后，就不知天高地厚的觉得入门了…于是动手开始做这个简洁的目标管理App了。因为书里面数据处理用的是core data，然后界面大部分都是用的xib，所以动手的时候也是那么做的。后来，数据变复杂了，就不知道如何用core data处理了…因为确实没太弄明白博大精深的core data。最后，完全放弃了core data，直接用FMDB和sqlite来处理数据了，界面方面也全部用storyboard弄了。从那开始，进度就快了很多。但是每周最多只抽出6个小时来弄，慢慢的就过了4个月了。过程中还是学到了很多的，每每掉到坑里，总是可以求助Stack Overflow爬出来。</p>
 <h3 id="结束">结束</h3>
@@ -106,7 +120,12 @@
 ]]></content>
     <summary type="html">
     <![CDATA[<h3 id="介绍">介绍</h3>
-<p>源代码就放在Github了，里面还有关于App更详细的介绍。因为大都用的原生控件，所以比较适合初学者参考吧。(App里还用到了特别国产的小红点UI元素…)<br><a href="https://github.com/chenggia]]>
+<p>源代码就放在Github了，里面还有关于App更详细的介绍。因为大都用的原生控件，所以比较适合初学者参考吧。(App里还用到了特别国产的小红点UI元素…)<br><a href="https://github.com/chenggiant/72-Hours" target="_blank" rel="external">https://github.com/chenggiant/72-Hours</a></p>
+<p>下载链接：<br><a href="https://itunes.apple.com/us/app/72-hours-simple-goal-management/id979550443" target="_blank" rel="external">https://itunes.apple.com/us/app/72-hours-simple-goal-management/id979550443</a></p>
+<h3 id="起步">起步</h3>
+<p>为了逼自己学习，有一天起床后，就直接买了个苹果开发者账号。起步完全是靠<code>iOS Programming(4th Edition)</code>了。边看书，边照着把代码都打了一遍。书里面的好多原理部分还没弄懂，找机会得重看一遍。</p>
+ ]]>
+    
     </summary>
     
   </entry>
@@ -116,7 +135,7 @@
     <link href="http://blog.6path.com/2015/02/06/64-bit-ubuntu-problem/"/>
     <id>http://blog.6path.com/2015/02/06/64-bit-ubuntu-problem/</id>
     <published>2015-02-06T06:01:31.000Z</published>
-    <updated>2015-02-06T07:01:50.000Z</updated>
+    <updated>2015-05-15T02:56:33.000Z</updated>
     <content type="html"><![CDATA[<p>Here are problems that are encounterd when using 64-bit Ubuntu system for USRP experiments.</p>
 <p><strong>1. How to build USRP FPGA image on 64-bit Ubuntu 12.04 LTS when you have error “libstdc++.so.6 not found”?</strong></p>
 <ul>
@@ -129,6 +148,7 @@
 </ul>
 <figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="reserved">export</span> LIBRARY_PATH=<span class="regexp">/usr/lib/</span>$(gcc -<span class="built_in">print</span>-multiarch)</div><div class="line"><span class="reserved">export</span> C_INCLUDE_PATH=<span class="regexp">/usr/include/</span>$(gcc -<span class="built_in">print</span>-multiarch)</div><div class="line"><span class="reserved">export</span> CPLUS_INCLUDE_PATH=<span class="regexp">/usr/include/</span>$(gcc -<span class="built_in">print</span>-multiarch)</div></pre></td></tr></table></figure>
 
+<p> <a id="more"></a></p>
 <ul>
 <li>(Optional) Check whether you have the correct version of GLIBCXX_x.x.x</li>
 </ul>
@@ -164,7 +184,19 @@
 ]]></content>
     <summary type="html">
     <![CDATA[<p>Here are problems that are encounterd when using 64-bit Ubuntu system for USRP experiments.</p>
-<p><strong>1. How to build USRP FPGA imag]]>
+<p><strong>1. How to build USRP FPGA image on 64-bit Ubuntu 12.04 LTS when you have error “libstdc++.so.6 not found”?</strong></p>
+<ul>
+<li>Install the following packages</li>
+</ul>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sudo apt-get <span class="operator"><span class="keyword">install</span> libc6-dev-i386</span></div><div class="line">sudo apt-<span class="keyword">get</span> <span class="keyword">install</span> g++-multilib</div></pre></td></tr></table></figure>
+
+<ul>
+<li>Add the following at the end of .bashrc file</li>
+</ul>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="reserved">export</span> LIBRARY_PATH=<span class="regexp">/usr/lib/</span>$(gcc -<span class="built_in">print</span>-multiarch)</div><div class="line"><span class="reserved">export</span> C_INCLUDE_PATH=<span class="regexp">/usr/include/</span>$(gcc -<span class="built_in">print</span>-multiarch)</div><div class="line"><span class="reserved">export</span> CPLUS_INCLUDE_PATH=<span class="regexp">/usr/include/</span>$(gcc -<span class="built_in">print</span>-multiarch)</div></pre></td></tr></table></figure>
+
+<p> ]]>
+    
     </summary>
     
   </entry>
@@ -174,7 +206,7 @@
     <link href="http://blog.6path.com/2015/02/04/new-year-new-begin/"/>
     <id>http://blog.6path.com/2015/02/04/new-year-new-begin/</id>
     <published>2015-02-04T10:52:41.000Z</published>
-    <updated>2015-02-06T05:26:13.000Z</updated>
+    <updated>2015-05-15T02:55:53.000Z</updated>
     <content type="html"><![CDATA[<p>已经二月份了，我才开始写这个题。其实很正常，因为我好像什么事都是反应慢半拍。</p>
 <h3 id="去年">去年</h3>
 <ul>
@@ -189,6 +221,8 @@
 <li><p>学习一点点Bottle和Flask框架。当时想报Web Developer的职位，快速学习的话Django太重，就选了前面两个框架。用Bottle的时候，是在学着做一个简易Twitter，数据部分还用了Redis，算是了解了下NoSQL数据库吧。</p>
 </li>
 <li><p>刷Leetcode的题目。断断续续的刷了大半年，用C++做了一半的样子。后来为了准备面试，又换Java刷了40题，而且有的题目是重复的。</p>
+<a id="more"></a>
+
 </li>
 </ul>
 <h4 id="本职工作">本职工作</h4>
@@ -242,7 +276,19 @@
     <![CDATA[<p>已经二月份了，我才开始写这个题。其实很正常，因为我好像什么事都是反应慢半拍。</p>
 <h3 id="去年">去年</h3>
 <ul>
-<li><p>学习了iOS开发。看完了<code>iOS Programming: The Big Nerd Ranch Guide</c]]>
+<li><p>学习了iOS开发。看完了<code>iOS Programming: The Big Nerd Ranch Guide</code>。这本书虽然有点旧了，但是内容还是讲的很清楚的。有大量的图片来描述程序运行时发生了什么，对了解底层的知识很有帮助。不足的是没有怎么介绍Storyboard的用法。对于个人开发来说，感觉还是Storyboard要方便很多，而且未来趋势应该也是Storyboard主导吧。<del>（这是我瞎说的）</del> 我自己反正全面转向Storyboard来做App了。</p>
+</li>
+<li><p>学习了Coursera的<code>Algorithms Part 1</code>和<code>Algorithms Part 2</code>。学了后才知道算法如果讲解的好，还是很吸引人的。本科时算法和数据结构的兴趣完全被老师给毁了。Part 2因为找工作了，就没有学那么仔细了，找时间还得再学一遍。学这门课的副产品是，因为assignment都得用Java，于是慢慢的学习了点Java。才发现Java其实没有那么的不堪，用起来还挺方便的。通过Java，还拿到了一个Developer的offer，即将要转型了。没深入学语言前，看过了太多的语言对比的文章和书，都不怎么支持Java作为入门语言。现在想来，看那些争论完全没有必要，应该选一个语言，然后硬着头皮扎进去学。没深入学语言，我就在看Joel Spolsky的<code>Joe on Software</code>和Paul Graham的<code>Hackers &amp; Painters</code>关于语言的讨论，我也是够蛋疼的。</p>
+</li>
+<li><p>学习了Bootstrap框架。学这个完全是因为接了个私活。以前了解过一点HTML/CSS/JavaScript，但是忘的差不多了，于是几乎现学现用，最后搭出来了个静态网站。因为被要求要支持所有设备，索性就直接找来Bootstrap用了。</p>
+</li>
+<li><p>学习了PHP和MySQL。同样是找工作驱动的学习。PHP和MySQL在本科时有用来做过一个博客程序和基于Google Maps的地图服务。但是一晃就过去了4年了，于是复习的时候主要就是看了一遍<code>MySQL Crash Course</code>和Tutsplus的<code>PHP Fundamentals</code>。但是去面试的时候，仍然悲剧了。后来就没再接触PHP了，SQL的知识在iOS开发的时候还会用到一点。</p>
+</li>
+<li><p>学习一点点Bottle和Flask框架。当时想报Web Developer的职位，快速学习的话Django太重，就选了前面两个框架。用Bottle的时候，是在学着做一个简易Twitter，数据部分还用了Redis，算是了解了下NoSQL数据库吧。</p>
+</li>
+<li><p>刷Leetcode的题目。断断续续的刷了大半年，用C++做了一半的样子。后来为了准备面试，又换Java刷了40题，而且有的题目是重复的。</p>
+]]>
+    
     </summary>
     
   </entry>
@@ -283,13 +329,15 @@
     <link href="http://blog.6path.com/2014/12/11/progamming-notes/"/>
     <id>http://blog.6path.com/2014/12/11/progamming-notes/</id>
     <published>2014-12-11T02:34:14.000Z</published>
-    <updated>2014-12-11T02:57:24.000Z</updated>
+    <updated>2015-05-15T02:55:39.000Z</updated>
     <content type="html"><![CDATA[<h3 id="背景">背景</h3>
 <p>今天做面试题目。题目的要求还很好满足，10分钟不到就写完了。但是纠结data type的时候花了好久，最后越来越紧张，直到最后被迫提交答案了都还没解决…</p>
 <p>纠结data type其实就是因为题目有个要求是，计算的结果如果大于2147483647就return -1。</p>
 <h3 id="纠结">纠结</h3>
 <p>其实主要的纠结就是<code>int a</code>和<code>int b</code>相乘，结果会overflow。于是就想着把相乘的结果cast到double，然后和2147483647比大小判定。</p>
 <p>然后就囧了，不知道当时怎么整的！怎么test结果都不对…其实就是这么一行code…<code>double c = (double)a * b</code></p>
+ <a id="more"></a>
+
 <h3 id="总结">总结</h3>
 <p>现在想来真丢脸啊，还是不应该没睡醒就做题啊…以后要记住了</p>
 <blockquote>
@@ -300,7 +348,12 @@
     <summary type="html">
     <![CDATA[<h3 id="背景">背景</h3>
 <p>今天做面试题目。题目的要求还很好满足，10分钟不到就写完了。但是纠结data type的时候花了好久，最后越来越紧张，直到最后被迫提交答案了都还没解决…</p>
-<p>纠结data type其实就是因为题目有个要求是，计算的结果如果大]]>
+<p>纠结data type其实就是因为题目有个要求是，计算的结果如果大于2147483647就return -1。</p>
+<h3 id="纠结">纠结</h3>
+<p>其实主要的纠结就是<code>int a</code>和<code>int b</code>相乘，结果会overflow。于是就想着把相乘的结果cast到double，然后和2147483647比大小判定。</p>
+<p>然后就囧了，不知道当时怎么整的！怎么test结果都不对…其实就是这么一行code…<code>double c = (double)a * b</code></p>
+ ]]>
+    
     </summary>
     
   </entry>
@@ -310,7 +363,7 @@
     <link href="http://blog.6path.com/2014/11/24/installation-guide-for-gnuradio-uhd/"/>
     <id>http://blog.6path.com/2014/11/24/installation-guide-for-gnuradio-uhd/</id>
     <published>2014-11-24T13:19:43.000Z</published>
-    <updated>2015-05-12T08:51:09.000Z</updated>
+    <updated>2015-05-15T02:56:01.000Z</updated>
     <content type="html"><![CDATA[<h3 id="Install_Ubuntu_12-04_LTS:">Install Ubuntu 12.04 LTS:</h3>
 <ol>
 <li><p>Make a liveUSB with software like <a href="http://rufus.akeo.ie/" target="_blank" rel="external">Rufus</a>, need to download Ubuntu image first.</p>
@@ -330,6 +383,8 @@
 <h3 id="Install_GNURadio_and_UHD:">Install GNURadio and UHD:</h3>
 <h4 id="Modify_the_source_by_changing_the_source_list:">Modify the source by changing the source list:</h4>
 <figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo gedit /etc/apt/<span class="keyword">source</span>.<span class="keyword">list</span></div></pre></td></tr></table></figure>
+
+ <a id="more"></a>
 
 <p>Then, copy the following to the top of the list (this will choose the best server for downloading software):</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="title">deb</span> <span class="url">mirror://mirrors.ubuntu.com/mirrors.txt</span> precise main restricted universe multiverse</div><div class="line">deb <span class="url">mirror://mirrors.ubuntu.com/mirrors.txt</span> precise-updates main restricted universe multiverse</div><div class="line">deb <span class="url">mirror://mirrors.ubuntu.com/mirrors.txt</span> precise-backports main restricted universe multiverse</div><div class="line">deb <span class="url">mirror://mirrors.ubuntu.com/mirrors.txt</span> precise-security main restricted universe multiverse</div></pre></td></tr></table></figure>
@@ -353,7 +408,26 @@
     <summary type="html">
     <![CDATA[<h3 id="Install_Ubuntu_12-04_LTS:">Install Ubuntu 12.04 LTS:</h3>
 <ol>
-<li><p>Make a liveUSB with software like <a href="http://rufus.akeo.i]]>
+<li><p>Make a liveUSB with software like <a href="http://rufus.akeo.ie/" target="_blank" rel="external">Rufus</a>, need to download Ubuntu image first.</p>
+</li>
+<li><p>Change the boot order of the laptop then boot from the USB stick. For Windows 8, disable the secure boot and may also need to change the boot type for compatibility issues. </p>
+</li>
+<li><p>Partition the disk:</p>
+<ul>
+<li>if the space is not enough, resize the disk in windows when necessary.</li>
+<li>select the primary partition: format - ext4 journal system, mount point /</li>
+<li>make one swap partition with size around 5 GB.</li>
+</ul>
+</li>
+<li><p>Follow all steps as instructed.</p>
+</li>
+</ol>
+<h3 id="Install_GNURadio_and_UHD:">Install GNURadio and UHD:</h3>
+<h4 id="Modify_the_source_by_changing_the_source_list:">Modify the source by changing the source list:</h4>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo gedit /etc/apt/<span class="keyword">source</span>.<span class="keyword">list</span></div></pre></td></tr></table></figure>
+
+ ]]>
+    
     </summary>
     
   </entry>
@@ -363,11 +437,12 @@
     <link href="http://blog.6path.com/2014/10/30/immutable-data-structure/"/>
     <id>http://blog.6path.com/2014/10/30/immutable-data-structure/</id>
     <published>2014-10-30T13:57:46.000Z</published>
-    <updated>2014-10-30T14:12:24.000Z</updated>
+    <updated>2015-05-15T02:56:09.000Z</updated>
     <content type="html"><![CDATA[<h3 id="背景">背景</h3>
 <p>最近需要实现Immutable的数据结构，于是开始在网上找相关的资料，找到了一个微软大牛写的<a href="http://blogs.msdn.com/b/ericlippert/archive/2007/11/13/immutability-in-c-part-one-kinds-of-immutability.aspx" target="_blank" rel="external">系列文章</a>。有兴趣的可以去那里看看。</p>
 <p>大牛们写文章确实完全不关心格式呀，代码都是黑白的，没有加亮看的相当费力啊！今天暂时把关于实现<a href="http://blogs.msdn.com/b/ericlippert/archive/2007/12/04/immutability-in-c-part-two-a-simple-immutable-stack.aspx" target="_blank" rel="external">Immutable Stack的文章</a>给搬过来。</p>
 <p>额，大牛是微软的…所以下面的代码是C#的。等我用java实现好了，保证没问题再贴上来吧。C++，VB，C#好像都已经自带Immutable的数据结构了。实现一遍也好呀，对functional programming的理解可能会深入一点吧…</p>
+<p> <a id="more"></a></p>
 <h3 id="美化版">美化版</h3>
 <p>Let’s start with something simple: an immutable stack.</p>
 <p>Now, immediately I hear the objection: a stack is by its very nature something that changes. A stack is an abstract data type (ADT) with the interface</p>
@@ -391,7 +466,11 @@
 ]]></content>
     <summary type="html">
     <![CDATA[<h3 id="背景">背景</h3>
-<p>最近需要实现Immutable的数据结构，于是开始在网上找相关的资料，找到了一个微软大牛写的<a href="http://blogs.msdn.com/b/ericlippert/archive/2007/11/13/immutab]]>
+<p>最近需要实现Immutable的数据结构，于是开始在网上找相关的资料，找到了一个微软大牛写的<a href="http://blogs.msdn.com/b/ericlippert/archive/2007/11/13/immutability-in-c-part-one-kinds-of-immutability.aspx" target="_blank" rel="external">系列文章</a>。有兴趣的可以去那里看看。</p>
+<p>大牛们写文章确实完全不关心格式呀，代码都是黑白的，没有加亮看的相当费力啊！今天暂时把关于实现<a href="http://blogs.msdn.com/b/ericlippert/archive/2007/12/04/immutability-in-c-part-two-a-simple-immutable-stack.aspx" target="_blank" rel="external">Immutable Stack的文章</a>给搬过来。</p>
+<p>额，大牛是微软的…所以下面的代码是C#的。等我用java实现好了，保证没问题再贴上来吧。C++，VB，C#好像都已经自带Immutable的数据结构了。实现一遍也好呀，对functional programming的理解可能会深入一点吧…</p>
+<p> ]]>
+    
     </summary>
     
   </entry>
@@ -401,7 +480,7 @@
     <link href="http://blog.6path.com/2014/10/27/random-thought/"/>
     <id>http://blog.6path.com/2014/10/27/random-thought/</id>
     <published>2014-10-27T13:16:22.000Z</published>
-    <updated>2014-10-27T13:17:18.000Z</updated>
+    <updated>2015-05-15T02:55:32.000Z</updated>
     <content type="html"><![CDATA[<p>今天在程序员论坛看到一个帖子，有网友在问如何根据一张图片买到图片中的衣服？</p>
 <ul>
 <li><p>他首先尝试了google和baidu，没有找到购买的链接。</p>
@@ -417,6 +496,8 @@
 <p>去淘宝找个比较大的白T店, 把图片甩给客服代表, 比如嫒嫒之类的，问这个衣服还有大号的吗？</p>
 <p>如此反复找10家，然后第2天后等待肯定性答复。</p>
 <p>其实这个思路相当的漂亮，自己一个人解决不了的问题，为什么不调动网络资源来找，为什么不依靠那些想帮你找到那个衣服的人，比如商家，比如帮助人觉得有成就感的人。</p>
+ <a id="more"></a>
+
 <h3 id="方案2:">方案2:</h3>
 <p>用网上求种的思路…众包实现。</p>
 <p>另一个就是扩展版的了：</p>
@@ -433,7 +514,17 @@
 </li>
 <li><p>于是他又尝试了提取局部画面进行图片搜索，依然失败。</p>
 </li>
-]]>
+<li><p>接着，他直接用taobao的图片搜索，还是没结果。</p>
+</li>
+</ul>
+<p>其实这个需求之前也有想过，当时觉得实现的话好困难，必须对图像识别了解的很深才行，而且一个人几乎不可能完成。有网友就有提到用deep learning的方法…</p>
+<p>然后看到后面网友给的方案，觉得很有意思。换了角度看问题，确实会眼前一亮啊！</p>
+<h3 id="方案1:">方案1:</h3>
+<p>去淘宝找个比较大的白T店, 把图片甩给客服代表, 比如嫒嫒之类的，问这个衣服还有大号的吗？</p>
+<p>如此反复找10家，然后第2天后等待肯定性答复。</p>
+<p>其实这个思路相当的漂亮，自己一个人解决不了的问题，为什么不调动网络资源来找，为什么不依靠那些想帮你找到那个衣服的人，比如商家，比如帮助人觉得有成就感的人。</p>
+ ]]>
+    
     </summary>
     
   </entry>
@@ -443,7 +534,7 @@
     <link href="http://blog.6path.com/2014/10/26/awk-study-notes/"/>
     <id>http://blog.6path.com/2014/10/26/awk-study-notes/</id>
     <published>2014-10-26T15:10:54.000Z</published>
-    <updated>2014-10-26T15:12:30.000Z</updated>
+    <updated>2015-05-15T02:56:26.000Z</updated>
     <content type="html"><![CDATA[<p>其实也没怎么学，只是按照<a href="http://coolshell.cn/articles/9070.html" target="_blank" rel="external">AWK 简明教程</a>大致学习了下最基本的用法而已。</p>
 <p>文章里的例子都很好，就不一一列举了。</p>
 <h3 id="过滤，指定分隔符和输出">过滤，指定分隔符和输出</h3>
@@ -456,6 +547,8 @@
 </ul>
 <h3 id="拆分文件">拆分文件</h3>
 <figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="title">awk</span> <span class="string">'NR!=1{print <span class="variable">$3</span>, <span class="variable">$4</span> &gt; <span class="variable">$6</span>}'</span> netstat.txt</div></pre></td></tr></table></figure>
+
+ <a id="more"></a>
 
 <ul>
 <li>不处理表头 <code>NR!=1</code></li>
@@ -491,7 +584,20 @@
 ]]></content>
     <summary type="html">
     <![CDATA[<p>其实也没怎么学，只是按照<a href="http://coolshell.cn/articles/9070.html" target="_blank" rel="external">AWK 简明教程</a>大致学习了下最基本的用法而已。</p>
-<p>文章里的例子都很好，]]>
+<p>文章里的例子都很好，就不一一列举了。</p>
+<h3 id="过滤，指定分隔符和输出">过滤，指定分隔符和输出</h3>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="title">awk</span>  -F: <span class="string">'<span class="variable">$1</span> ~ /root/ {print <span class="variable">$1</span>,<span class="variable">$3</span>,<span class="variable">$6</span>}'</span> OFS=<span class="string">"\t"</span> /etc/passwd</div></pre></td></tr></table></figure>
+
+<ul>
+<li>匹配第一列里带root的  <code>$1 ~ /root/</code></li>
+<li>输出1，3，6列 <code>print $1, $3, $6</code></li>
+<li>指定分隔符 <code>-F:</code>, 指定tab分隔 <code>-F&quot;\t&quot;</code></li>
+</ul>
+<h3 id="拆分文件">拆分文件</h3>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="title">awk</span> <span class="string">'NR!=1{print <span class="variable">$3</span>, <span class="variable">$4</span> &gt; <span class="variable">$6</span>}'</span> netstat.txt</div></pre></td></tr></table></figure>
+
+ ]]>
+    
     </summary>
     
   </entry>
@@ -501,12 +607,14 @@
     <link href="http://blog.6path.com/2014/10/26/play-static-blogging/"/>
     <id>http://blog.6path.com/2014/10/26/play-static-blogging/</id>
     <published>2014-10-26T03:57:56.000Z</published>
-    <updated>2014-10-26T03:59:14.000Z</updated>
+    <updated>2015-05-15T02:55:46.000Z</updated>
     <content type="html"><![CDATA[<h3 id="开始">开始</h3>
 <p>本来懒得折腾，用Tumblr来着。但Tumblr对Markdown的支持是在是太差了，而且主题折腾起来还是觉得不够自由，写了4篇文章后就受不了了。于是又开始了选择，对比，尝试。这个过程是那么的是曾相识！该用什么文本编辑器、哪个PIM软件最强大、学习什么语言好、学C看哪本书入门、用什么App看Twitter、买哪个VPS服务性价比最高…为了这些，不知浪费了多少天，看了多少评测文章，绝对是没完没了。到最后，都忘记了自己为什么要对比来着。</p>
 <p>但是…我还是开始折腾静态博客了！今天的问题是：该用哪个静态博客了？</p>
 <p>为了寻找答案，于是在网上开始到处看了，Octopress，Jekyll，Ghost，Hexo，Pelican…</p>
 <p>几乎按着顺序挨个尝试了一遍，各种未预料到的问题，终于这个博客用Hexo给搭起来了。完全不会node.js，Ruby啥的，我会乱说么…但就是爱看各种对比文章，各种推荐软文…这应该是病，得电击。</p>
+ <a id="more"></a>
+
 <p>对了，在这个过程中，我还测试了Markdown编辑器哦，Stackedit，Cmd Markdown，Mou，Macdown…</p>
 <h3 id="结束">结束</h3>
 <p>完了！今天本来是要做leetcode的题目来着，开博客目的是要记录leetcode的做题笔记来着…</p>
@@ -515,7 +623,12 @@
 ]]></content>
     <summary type="html">
     <![CDATA[<h3 id="开始">开始</h3>
-<p>本来懒得折腾，用Tumblr来着。但Tumblr对Markdown的支持是在是太差了，而且主题折腾起来还是觉得不够自由，写了4篇文章后就受不了了。于是又开始了选择，对比，尝试。这个过程是那么的是曾相识！该用什么文本编辑器、哪个PIM软]]>
+<p>本来懒得折腾，用Tumblr来着。但Tumblr对Markdown的支持是在是太差了，而且主题折腾起来还是觉得不够自由，写了4篇文章后就受不了了。于是又开始了选择，对比，尝试。这个过程是那么的是曾相识！该用什么文本编辑器、哪个PIM软件最强大、学习什么语言好、学C看哪本书入门、用什么App看Twitter、买哪个VPS服务性价比最高…为了这些，不知浪费了多少天，看了多少评测文章，绝对是没完没了。到最后，都忘记了自己为什么要对比来着。</p>
+<p>但是…我还是开始折腾静态博客了！今天的问题是：该用哪个静态博客了？</p>
+<p>为了寻找答案，于是在网上开始到处看了，Octopress，Jekyll，Ghost，Hexo，Pelican…</p>
+<p>几乎按着顺序挨个尝试了一遍，各种未预料到的问题，终于这个博客用Hexo给搭起来了。完全不会node.js，Ruby啥的，我会乱说么…但就是爱看各种对比文章，各种推荐软文…这应该是病，得电击。</p>
+ ]]>
+    
     </summary>
     
   </entry>
@@ -525,7 +638,7 @@
     <link href="http://blog.6path.com/2014/10/26/use-thunmdrive-to-fix-grub2/"/>
     <id>http://blog.6path.com/2014/10/26/use-thunmdrive-to-fix-grub2/</id>
     <published>2014-10-26T03:51:41.000Z</published>
-    <updated>2014-10-26T03:52:38.000Z</updated>
+    <updated>2015-05-15T02:55:24.000Z</updated>
     <content type="html"><![CDATA[<p>不管你是调整分区大小，还是安装了新系统，也可能是没睡醒做了该剁手的事情，GRUB2经常会被破坏掉。</p>
 <p>今天这个事情就发生在了我身上…手抖的删掉了一个分区，然后直接点了重启。于是开机时卡在GRUB RESCURE了。</p>
 <p>下面就是重新安装GRUB的流程了。</p>
@@ -535,6 +648,8 @@
 
 <p>让GRUB检测下电脑里还有那些操作系统，比如Windows或者旧版的Linux：</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">sudo mount --<span class="keyword">bind</span> /dev /mnt/dev &&</div><div class="line">sudo mount --<span class="keyword">bind</span> /dev/pts /mnt/dev/pts &&</div><div class="line">sudo mount --<span class="keyword">bind</span> /<span class="keyword">proc</span> /mnt/<span class="keyword">proc</span> &&</div><div class="line">sudo mount --<span class="keyword">bind</span> /sys /mnt/sys</div></pre></td></tr></table></figure>
+
+ <a id="more"></a>
 
 <h3 id="修复GRUB">修复GRUB</h3>
 <p>挂载操作完了，开始<code>chroot</code>到挂载点来更新吧：</p>
@@ -553,7 +668,16 @@
     <summary type="html">
     <![CDATA[<p>不管你是调整分区大小，还是安装了新系统，也可能是没睡醒做了该剁手的事情，GRUB2经常会被破坏掉。</p>
 <p>今天这个事情就发生在了我身上…手抖的删掉了一个分区，然后直接点了重启。于是开机时卡在GRUB RESCURE了。</p>
-<p>下面就是重新安装GRUB的流程了]]>
+<p>下面就是重新安装GRUB的流程了。</p>
+<h3 id="挂载分区">挂载分区</h3>
+<p>挂载ubuntu安装的分区。可以用GParted或者Disk Utility来查看。通常是ext4格式的那个区。找到后就输入对应的命令了。比如ext4是对应<code>/dev/sda5</code>的，命令如下：</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">sudo</span> mount /dev/sda5 /mnt</div></pre></td></tr></table></figure>
+
+<p>让GRUB检测下电脑里还有那些操作系统，比如Windows或者旧版的Linux：</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">sudo mount --<span class="keyword">bind</span> /dev /mnt/dev &&</div><div class="line">sudo mount --<span class="keyword">bind</span> /dev/pts /mnt/dev/pts &&</div><div class="line">sudo mount --<span class="keyword">bind</span> /<span class="keyword">proc</span> /mnt/<span class="keyword">proc</span> &&</div><div class="line">sudo mount --<span class="keyword">bind</span> /sys /mnt/sys</div></pre></td></tr></table></figure>
+
+ ]]>
+    
     </summary>
     
   </entry>

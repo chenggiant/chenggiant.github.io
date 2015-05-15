@@ -148,6 +148,8 @@
 <h3 id="拆分文件">拆分文件</h3>
 <figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="title">awk</span> <span class="string">'NR!=1{print <span class="variable">$3</span>, <span class="variable">$4</span> &gt; <span class="variable">$6</span>}'</span> netstat.txt</div></pre></td></tr></table></figure>
 
+ <a id="more"></a>
+
 <ul>
 <li>不处理表头 <code>NR!=1</code></li>
 <li>按照第6列的值分割文件 <code>print &gt; $6</code></li>
