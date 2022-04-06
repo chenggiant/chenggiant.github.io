@@ -8,7 +8,7 @@ tags: technique
 
 ## 如何使用
 
-### 方法一
+### 方法一 - 手动查找
 打开[Wayback Machine](https://archive.org/web/)，输入不存在页面的地址，比如 https://frankchimero.com/blog/no-new-tools/
 
 ![](../images/404-1.jpg)
@@ -21,7 +21,7 @@ tags: technique
 
 ![](../images/404-3.jpg)
 
-### 方法二
+### 方法二 - 使用官方插件
 上面的方法还比较手动，不介意安装太多Chrome插件的话，可以用[官方的插件](https://chrome.google.com/webstore/detail/wayback-machine/fpnmgdkabkmnadcjpehmlllkndpkmiak)。
 
 打开失效的页面时，插件会直接显示一个小红点，表示有找到存档的旧版本。直接点击查看就可以了！

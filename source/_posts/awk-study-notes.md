@@ -1,7 +1,7 @@
 ---
 title: AWK学习笔记
 date: 2014-10-26 19:29:34
-tags:
+tags: technique
 ---
 # awk学习笔记
 
